@@ -79,13 +79,13 @@
                 <xsl:apply-templates select="parameters"/>
               </xsl:when>
               <xsl:when test="status/@code = 2">
-                <div id="input" class="box">
+                <!--  <div id="input" class="box">
                     <button id="toggleinputfiles">Show input files</button>
                     <div style="clear: both"></div>
                     <div id="inputfilesarea" style="display: none">
                         <xsl:apply-templates select="input"/>
                     </div>
-                </div>
+                </div> -->
                 <xsl:apply-templates select="output"/>
               </xsl:when>
             </xsl:choose>
@@ -108,7 +108,11 @@
     <xsl:if test="status/@code = 1 and (contains(/clam/@interfaceoptions,'secureonly') or contains(/clam/@interfaceoptions,'simplepolling'))" >
       <meta http-equiv="refresh" content="2" />
     </xsl:if>
-    <title><xsl:value-of select="@name"/> :: <xsl:value-of select="@project"/></title>
+    <title>
+      <xsl:value-of select="@name"/> :: 
+      <xsl:value-of select="description" /> <!--  Added -->
+      <!--  <xsl:value-of select="@project"/> -->
+    </title>
     <link rel="stylesheet" href="{/clam/@baseurl}/static/base.css" type="text/css" />
     <link rel="stylesheet" href="{/clam/@baseurl}/static/fineuploader.css" type="text/css" />
     <link rel="stylesheet" href="{/clam/@baseurl}/static/table.css" type="text/css" />
@@ -213,9 +217,11 @@
         <a href="https://proycon.github.io/clam">https://proycon.github.io/clam</a>
         <br /><a href="http://ru.nl/clst">Centre for Language and Speech Technology</a>, <a href="http://www.ru.nl">Radboud University Nijmegen</a></p>
 
+        <!--  
         <span class="extracredits">
             <strong>CLAM</strong> is funded by <a href="http://www.clarin.nl/">CLARIN-NL</a> and its successor <a href="http://www.clariah.nl">CLARIAH</a>.
         </span>
+        -->
     </div>
 
 </xsl:template>
@@ -228,6 +234,7 @@
     </div>
 </xsl:template>
 
+<!--  
 <xsl:template match="/clam/status">
     <div id="status" class="box">
      <h2>Status</h2>
@@ -263,8 +270,7 @@
            <img class="progress" src="{/clam/@baseurl}/static/progress.gif" />
          </xsl:otherwise>
         </xsl:choose>
-        <p>You may safely close your browser or shut down your computer during this process, the system will keep running on the server and is available when you return another time.</p>
-
+        
         <xsl:call-template name="log" />
       </xsl:when>
       <xsl:when test="@code = 2">
@@ -286,6 +292,7 @@
 
     </div>
 </xsl:template>
+-->
 
 <xsl:template name="log">
         <div id="statuslog">
@@ -605,10 +612,11 @@
           <xsl:call-template name="logout"/>
         </xsl:if>
 
+		<!--  
         <div id="description" class="box">
          <xsl:value-of select="description" />
-        </div>
-
+        </div> 
+        --> 
         <xsl:if test="/clam/customhtml">
             <div id="customhtml" class="box">
                 <xsl:value-of select="/clam/customhtml" disable-output-escaping="yes" />
@@ -643,11 +651,13 @@
 
         <xsl:if test="count(/clam/profiles/profile) > 0">
         <div id="startproject" class="box">
-            <h3>Start a new Project</h3>
-            	<p>A project is your personal workspace for a specific task; in a project you gather input files, set parameters for the system, monitor the system's progress and download and visualise your output files. Users can have and run multiple projects simultaneously. You can always come back to a project, regardless of the state it's in, until you explicitly delete it. To create a new project, enter a short unique identifier below <em>(no spaces or special characters allowed)</em>:</p>
+            <h3>Start using the webservice</h3>
+            	<!-- <p>A project is your personal workspace for a specific task; in a project you gather input files, set parameters for the system, monitor the system's progress and download and visualise your output files. Users can have and run multiple projects simultaneously. You can always come back to a project, regardless of the state it's in, until you explicitly delete it. To create a new project, enter a short unique identifier below <em>(no spaces or special characters allowed)</em>:</p>
                 Project ID: <input id="projectname" type="projectname" value="" />
-                <input id="startprojectbutton" type="button" value="Create project" />
+                <input id="startprojectbutton" type="button" value="Create project" />  -->
+                <button onclick="createprojectwithoutname()">Start using the web service</button>
         </div>
+        <!--
         <div id="index" class="box">
         <h2>Projects</h2>
         <table id="projects">
@@ -691,6 +701,7 @@
             <button onclick="showquickdelete()">Show delete buttons</button>
         </div>
         </div>
+        -->
         </xsl:if>
 
 

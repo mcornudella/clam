@@ -288,6 +288,37 @@ function processuploadresponse(response, paramdiv) {
     });
 }
 
+function createprojectwithoutname(){//added: create a random name for a project
+	
+	var randomprojectname = "project_" + new Date().getTime().toString(36) + "_" + Math.random().toString(36).substring(2, 15) ;
+    
+    $.ajax({
+       type: "PUT",
+       url: baseurl + "/" + randomprojectname.val() + "/",
+       dataType: "text",
+       beforeSend: oauthheader,
+       crossDomain: true,
+       xhrFields: {
+         withCredentials: true
+       },
+       success: function(){
+           if (oauth_access_token !== "") {
+             window.location.href = baseurl + "/" + randomprojectname.val() + "/?oauth_access_token="+oauth_access_token;
+           } else {
+             window.location.href = baseurl + "/" + randomprojectname.val() + "/";
+           }
+       },
+       error: function(response){
+           if ((response.status < 200) || (response.status > 299)) { //patch
+               if (response.responseText) {
+                   alert(response.responseText);
+               } else {
+                   alert("Unable to create project, the server returned an error (HTTP " + response.status + "):  Did you perhaps use spaces or special characters in the ID? Only underscores and alphanumeric characters are allowed.");
+               }
+           }
+       }
+    });
+}
 
 function showquickdelete() {//eslint-disable-line no-unused-vars
     $('.quickdelete').show();
@@ -457,7 +488,49 @@ function initclam() { //eslint-disable-line no-unused-vars, complexity
        }
     }
 
+ //Added
+ //Create a new project without providing name
+   if ($("#startprojectwithoutnamebutton").length) {
+	   var randomprojectname = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
+      //$("#projectname").keypress(function(e){ if (e.which === 13) $('#startprojectbutton').focus().click(); });
 
+      $("#startprojectwithoutnamebutton").click(function(){
+        //if ($("#projectname").val() === "") {
+        //    alert("No project ID specified");
+        //    return;
+        //}
+        $.ajax({
+           type: "PUT",
+           url: baseurl + "/" + randomprojectname.val() + "/",
+           dataType: "text",
+           beforeSend: oauthheader,
+           crossDomain: true,
+           xhrFields: {
+             withCredentials: true
+           },
+           success: function(){
+               if (oauth_access_token !== "") {
+                 window.location.href = baseurl + "/" + randomprojectname.val() + "/?oauth_access_token="+oauth_access_token;
+               } else {
+                 window.location.href = baseurl + "/" + randomprojectname.val() + "/";
+               }
+           },
+           error: function(response){
+               if ((response.status < 200) || (response.status > 299)) { //patch
+                   if (response.responseText) {
+                       alert(response.responseText);
+                   } else {
+                       alert("Unable to create project, the server returned an error (HTTP " + response.status + "):  Did you perhaps use spaces or special characters in the ID? Only underscores and alphanumeric characters are allowed.");
+                   }
+               }
+           }
+        });
+        //$("#startprojectform").attr("action",$("#projectname").val());
+      });
+  }
+   //End added
+   
+   
    //Create a new project'
     if ($("#startprojectbutton").length) {
        $("#projectname").keypress(function(e){ if (e.which === 13) $('#startprojectbutton').focus().click(); });
