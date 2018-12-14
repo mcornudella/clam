@@ -21,10 +21,10 @@
     			<ol>
                     <xsl:choose>
                     <xsl:when test="/clam/@oauth_access_token = ''">
-                      <li><a href="{/clam/@baseurl}/">1. Projects</a></li>
+                      <li><a href="{/clam/@baseurl}/">1. Initial tab</a></li>
                     </xsl:when>
                     <xsl:otherwise>
-                      <li><a href="{/clam/@baseurl}/?oauth_access_token={/clam/@oauth_access_token}">1. Projects</a></li>
+                      <li><a href="{/clam/@baseurl}/?oauth_access_token={/clam/@oauth_access_token}">1. Initial tab</a></li>
                     </xsl:otherwise>
                     </xsl:choose>
 				    <xsl:choose>
@@ -109,8 +109,7 @@
       <meta http-equiv="refresh" content="2" />
     </xsl:if>
     <title>
-      <xsl:value-of select="@name"/> :: 
-      <xsl:value-of select="description" /> <!--  Added -->
+      <xsl:value-of select="@name"/> :: <xsl:value-of select="@description" /> <!--  Added -->
       <!--  <xsl:value-of select="@project"/> -->
     </title>
     <link rel="stylesheet" href="{/clam/@baseurl}/static/base.css" type="text/css" />
@@ -234,7 +233,7 @@
     </div>
 </xsl:template>
 
-<!--  
+
 <xsl:template match="/clam/status">
     <div id="status" class="box">
      <h2>Status</h2>
@@ -292,7 +291,7 @@
 
     </div>
 </xsl:template>
--->
+
 
 <xsl:template name="log">
         <div id="statuslog">
@@ -596,10 +595,10 @@
 			<ol>
                 <xsl:choose>
                 <xsl:when test="/clam/@oauth_access_token = ''">
-                  <li class="active"><a href="{/clam/@baseurl}/">1. Projects</a></li>
+                  <li class="active"><a href="{/clam/@baseurl}/">1. Initial tab</a></li>
                 </xsl:when>
                 <xsl:otherwise>
-                  <li class="active"><a href="{/clam/@baseurl}/?oauth_access_token={/clam/@oauth_access_token}">1. Projects</a></li>
+                  <li class="active"><a href="{/clam/@baseurl}/?oauth_access_token={/clam/@oauth_access_token}">1. Initial tab</a></li>
                 </xsl:otherwise>
                 </xsl:choose>
 				<li class="disabled">2. Input &amp; Parameters</li>
