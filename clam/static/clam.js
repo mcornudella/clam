@@ -290,12 +290,11 @@ function processuploadresponse(response, paramdiv) {
 
 function createprojectwithoutname(){//added: create a random name for a project
 	
-	var date = new Date();
-	var randomprojectname = "project_" + date.toISOString().slice(0,10).replace(/-/g,"") + "_" + Math.random().toString(36).substring(2, 15) ;
+	var randomprojectname = "project_" + new Date().getTime().toString(36) + "_" + Math.random().toString(36).substring(2, 15) ;
     
     $.ajax({
        type: "PUT",
-       url: baseurl + "/" + randomprojectname.val() + "/",
+       url: baseurl + "/" + randomprojectname + "/",
        dataType: "text",
        beforeSend: oauthheader,
        crossDomain: true,
@@ -304,9 +303,9 @@ function createprojectwithoutname(){//added: create a random name for a project
        },
        success: function(){
            if (oauth_access_token !== "") {
-             window.location.href = baseurl + "/" + randomprojectname.val() + "/?oauth_access_token="+oauth_access_token;
+             window.location.href = baseurl + "/" + randomprojectname + "/?oauth_access_token="+oauth_access_token;
            } else {
-             window.location.href = baseurl + "/" + randomprojectname.val() + "/";
+             window.location.href = baseurl + "/" + randomprojectname + "/";
            }
        },
        error: function(response){
