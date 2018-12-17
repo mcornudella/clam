@@ -1,5 +1,5 @@
 body {
-    background: #e6dcca;
+    background: #ce5f5f; /*#e6dcca;*/
     font-family: sans-serif;
     font-size: 12px;
     margin: 0px;
@@ -175,7 +175,7 @@ table.files li {
 	display: inline-block;
     margin: 0px;
     padding: 3px;
-    background: #c9bea8;
+    background: #cc9d92; /*#c9bea8;*/
 }
 
 

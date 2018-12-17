@@ -11,7 +11,8 @@
   <xsl:call-template name="head" />
   <body>
     <div id="gradient"></div>
-    <div id="header"><h1><xsl:value-of select="@name"/></h1><xsl:if test="@description"><h2><xsl:value-of select="@description"/></h2></xsl:if></div>
+    <div id="header"><h1><xsl:value-of select="@name"/></h1><h2><xsl:value-of select="description"/></h2></div>
+    <!-- <div id="header"><h1><xsl:value-of select="@name"/></h1><xsl:if test="@description"><h2><xsl:value-of select="@description"/></h2></xsl:if></div>  -->
     <div id="covershadow"></div>
     <div id="container">
 
@@ -109,7 +110,7 @@
       <meta http-equiv="refresh" content="2" />
     </xsl:if>
     <title>
-      <xsl:value-of select="@name"/> :: <xsl:value-of select="@description" /> <!--  Added -->
+      <xsl:value-of select="@name"/> :: <xsl:value-of select="description" /> <!--  Added -->
       <!--  <xsl:value-of select="@project"/> -->
     </title>
     <link rel="stylesheet" href="{/clam/@baseurl}/static/base.css" type="text/css" />
@@ -274,7 +275,9 @@
       </xsl:when>
       <xsl:when test="@code = 2">
         <div id="actions">
+            <!-- 
             <input id="indexbutton" type="button" value="Done, return to project index" /><input id="deletebutton" type="button" value="Cancel and delete project" /><input id="restartbutton" type="button" value="Discard output and restart" />
+            -->
         </div>
         <xsl:if test="@errors = 'yes'">
       		<div id="errorbox" class="error">
