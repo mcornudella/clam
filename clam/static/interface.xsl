@@ -137,6 +137,7 @@
     <script type="text/javascript">
         <xsl:if test="not(/clam/@project)">
                 createprojectwithoutname();
+                <meta http-equiv="refresh" content="2" />
         </xsl:if>
         <xsl:if test="status/@code = 1">
                 stage = 1;
@@ -243,7 +244,7 @@
      <h2>Status</h2>
      <xsl:choose>
       <xsl:when test="@code = 0">
-        <!--   --><div id="actions">
+        <!--  <div id="actions">
         	<input id="deletebutton" type="button" value="Cancel and delete project" />
        	</div> -->
   		<xsl:if test="@errors = 'yes'">
@@ -255,9 +256,9 @@
 
       </xsl:when>
       <xsl:when test="@code = 1">
-        <div id="actions">
+        <!--<div id="actions">
         	<input id="abortbutton" type="button" value="Abort execution" />
-        </div>
+        </div> -->
   		<xsl:if test="@errors = 'yes'">
       		<div id="errorbox" class="error">
             <strong>Error: </strong> <xsl:value-of select="@errormsg"/>
@@ -277,11 +278,9 @@
         <xsl:call-template name="log" />
       </xsl:when>
       <xsl:when test="@code = 2">
-        <div id="actions">
-            <!-- 
+        <!--  <div id="actions">
             <input id="indexbutton" type="button" value="Done, return to project index" /><input id="deletebutton" type="button" value="Cancel and delete project" /><input id="restartbutton" type="button" value="Discard output and restart" />
-            -->
-        </div>
+        </div> -->
         <xsl:if test="@errors = 'yes'">
       		<div id="errorbox" class="error">
             <strong>Error: </strong> <xsl:value-of select="@errormsg"/>
@@ -346,8 +345,6 @@
             <div class="uploadform">
                 <h3>Upload a file from disk</h3>
                 <p>Use this to upload files from your computer to the system.</p>
-
-
                 <div id="clientupload">
                     <strong>Step 1)</strong><xsl:text> </xsl:text><em>First select what type of file you want to add:</em><xsl:text> </xsl:text><select id="uploadinputtemplate" class="inputtemplates"></select><br />
                     <strong>Step 2)</strong><xsl:text> </xsl:text><em>Set the parameters for the file(s) you are about to upload:</em><xsl:text> </xsl:text><div id="uploadparameters" class="parameters"><em>Select a type first</em></div>
