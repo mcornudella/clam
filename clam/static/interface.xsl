@@ -240,9 +240,9 @@
      <h2>Status</h2>
      <xsl:choose>
       <xsl:when test="@code = 0">
-        <div id="actions">
+        <!--   --><div id="actions">
         	<input id="deletebutton" type="button" value="Cancel and delete project" />
-       	</div>
+       	</div> -->
   		<xsl:if test="@errors = 'yes'">
       		<div id="errorbox" class="error">
             <strong>Error: </strong> <xsl:value-of select="@errormsg"/>
@@ -549,7 +549,7 @@
 
 
         <div id="startbutton">
-            <input type="submit" class="start" value="Start" />
+            <input type="submit" class="start" value="Run" />
         </div>
     </div>
     </form>
