@@ -16,7 +16,7 @@ body {
     z-index: -100;
 }
 #container {
-    background: rgba(0, 0, 0, 0) linear-gradient(rgba(207, 191, 157, 0.4), rgba(0, 0, 0, 0.1)) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) linear-gradient(rgba(193, 193, 193, 0.4), rgba(0, 0, 0, 0.1)) repeat scroll 0 0;
 	border-radius: 12px;
     -moz-border-radius: 12px; /* CSS3 for older Mozilla */
     -webkit-border-radius: 12px; /* CSS3 for Safari */
@@ -213,7 +213,7 @@ a:visited {
 }
 
 input.uploadbutton, input.submitaction {
-	background: #8a4949;
+	background: #686868;/*#8a4949;*/
 	padding: 7px;
 	color: white;
 	font-weight: normal;
@@ -222,16 +222,16 @@ input.uploadbutton, input.submitaction {
 }
 
 #container .qq-upload-button {
-    background: #8a4949;
+    background: #686868;/*#8a4949;*/
     border-radius: 5px;
 }
 #container .qq-upload-button:hover {
-    background: #aa0000;
+    background: #aa7a6d;
 }
 
 
 input#indexbutton, input#abortbutton, input#restartbutton, input#deletebutton, input#startprojectbutton, button.quickdelete {
-	background: #8a4949;
+	background: #d47072;
 	padding: 2px;
 	color: white;
 	font-weight: normal;
@@ -243,11 +243,11 @@ input#indexbutton, input#abortbutton, input#restartbutton, input#deletebutton, i
     margin: 1px;
 }
 input#indexbutton:hover, input#abortbutton:hover, input#restartbutton:hover, input#deletebutton:hover, input#startprojectbutton:hover, button.quickdelete:hover {
-	background: #EE0000;	
+	background: #ee8282;	
 }
 
 input.uploadbutton:hover {
-	background: #AA0000;
+	background: #aa5e5f;
     border-radius: 5px;
 }
 
@@ -262,7 +262,7 @@ div#startbutton input {
 }
 
 div#startbutton input:hover {
-	background: #AA0000;
+	background: #aa5e5f;
 }
 div#actionindex p {
     margin-left: 20px;
