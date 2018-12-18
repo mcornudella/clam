@@ -70,7 +70,7 @@
                 </xsl:when>
             </xsl:choose>
 
-            <xsl:apply-templates select="status"/>
+            <!--  <xsl:apply-templates select="status"/>  -->
             <xsl:choose>
               <xsl:when test="status/@code = 0">
                 <div id="input" class="box">
@@ -79,7 +79,11 @@
                 </div>
                 <xsl:apply-templates select="parameters"/>
               </xsl:when>
+              <xsl:when test="status/@code = 1">
+                <xsl:apply-templates select="status"/>
+              </xsl:when>
               <xsl:when test="status/@code = 2">
+                <xsl:apply-templates select="status"/>
                 <!--  <div id="input" class="box">
                     <button id="toggleinputfiles">Show input files</button>
                     <div style="clear: both"></div>
