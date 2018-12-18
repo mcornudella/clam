@@ -84,13 +84,13 @@
               </xsl:when>
               <xsl:when test="status/@code = 2">
                 <xsl:apply-templates select="status"/>
-                  <div id="input" class="box">
+                <!--  <div id="input" class="box">
                     <button id="toggleinputfiles">Show input files</button>
                     <div style="clear: both"></div>
                     <div id="inputfilesarea" style="display: none">
                         <xsl:apply-templates select="input"/>
                     </div>
-                </div> 
+                </div> -->
                 <xsl:apply-templates select="output"/>
               </xsl:when>
             </xsl:choose>
