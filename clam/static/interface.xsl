@@ -486,7 +486,7 @@
                 <tr>
                     <th style="width: 35%">Output File</th>
                     <th style="width: 25%">Template</th>
-                    th style="width: 20%">Language</th>
+                    <th style="width: 20%">Language</th>
                     <!-- <th style="width: 20%">Format</th>  -->
                     <th style="width: 25%">Viewers</th>
                 </tr>
