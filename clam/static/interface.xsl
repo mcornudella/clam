@@ -428,7 +428,7 @@
             </div>
         </xsl:if>
         -->
-
+		<!--
         <div id="inputfilesarea">
         <h3>Input files</h3>
         <table id="inputfiles" class="files">
@@ -445,6 +445,7 @@
             </tbody>
         </table>
         </div>
+        -->
 </xsl:template>
 
 <xsl:template match="/clam/output">
