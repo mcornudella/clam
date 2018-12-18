@@ -805,10 +805,11 @@ function initclam() { //eslint-disable-line no-unused-vars, complexity
                      uploader._settings.data.inputtemplate = inputtemplate_id;
                      addformdata( '#uploadparameters', uploader._settings.data );
                  }
+                 $('#clientupload').show();
             },
             onSubmit: function(){
                 $('#clientupload').show();
-                $('#uploadprogress').show();
+                $('#uploadprogress').hide();
             },
             onComplete: function(file, response){ //eslint-disable-line no-unused-vars
                 processuploadresponse(response, "#uploadparameters");
