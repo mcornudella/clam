@@ -547,7 +547,7 @@
         <!--  <h2>Parameter Selection</h2>  -->
 
         <xsl:for-each select="parametergroup">
-         <!-- <h3><xsl:value-of select="@name" /></h3> -->
+          <h3><xsl:value-of select="@name" /></h3>
          <table>
           <xsl:apply-templates />
          </table>
