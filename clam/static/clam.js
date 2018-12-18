@@ -807,12 +807,12 @@ function initclam() { //eslint-disable-line no-unused-vars, complexity
                  }
             },
             onSubmit: function(){
-                $('#clientupload').hide();
+                //$('#clientupload').hide();
                 $('#uploadprogress').show();
             },
             onComplete: function(file, response){ //eslint-disable-line no-unused-vars
                 processuploadresponse(response, "#uploadparameters");
-                $('#uploadprogress').hide();
+                //$('#uploadprogress').hide();
                 $('#clientupload').show();
             }
         });
