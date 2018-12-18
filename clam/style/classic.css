@@ -31,19 +31,19 @@ body {
 
 h2 {
     font-size: 120%;
-    color: #a6956f;
+    color: #a66f6f;/*#a6956f;*/
     text-decoration: small-caps;  
-    border-bottom:  1px solid #a6956f;
+    border-bottom:  1px solid #a66f6f; /*#a6956f;*/
 }
 h3 {
     margin-left: 5px;
     font-size: 100%;
-    color: #a6956f;
+    color: #a66f6f;/*#a6956f;*/
     text-decoration: small-caps;  
-    border-bottom:  1px solid #a6956f;
+    border-bottom:  1px solid #a66f6f; /*#a6956f;*/
 }
 #header {
-	background: rgba(155,140,107,0.5);
+	background: rgba(166,111,111,0.5); /*rgba(155,140,107,0.5);*/
     margin: 0px;
 }
 #header h1 {
