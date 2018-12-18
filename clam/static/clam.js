@@ -288,6 +288,13 @@ function processuploadresponse(response, paramdiv) {
     });
 }
 
+function showHide(spanId){ //added: show/hide input options
+  if (document.getElementById(spanId).style.display == "none")
+    document.getElementById(spanId).style.display= "block";
+  else
+    document.getElementById(spanId).style.display= "none";
+}
+
 function createprojectwithoutname(){//added: create a random name for a project
 	
 	var randomprojectname = "project_" + new Date().getTime().toString(36) + "_" + Math.random().toString(36).substring(2, 15) ;
