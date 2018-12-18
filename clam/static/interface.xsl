@@ -422,7 +422,7 @@
         <h2>Input</h2>
 
 
-        <!--
+        
         <xsl:if test="/clam/inputsources/inputsource">
             <div id="corpusselection">
             <label>Add files from pre-installed input source: </label>
@@ -434,8 +434,8 @@
             <button id="inputsourceselect">Copy files</button>
             </div>
         </xsl:if>
-        -->
-		<!--
+        
+		
         <div id="inputfilesarea">
         <h3>Input files</h3>
         <table id="inputfiles" class="files">
@@ -452,7 +452,7 @@
             </tbody>
         </table>
         </div>
-        -->
+        
 </xsl:template>
 
 <xsl:template match="/clam/output">
