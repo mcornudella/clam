@@ -367,8 +367,10 @@
             </xsl:if>
 
             <xsl:if test="contains(/clam/@interfaceoptions,'inputfromweb')">
-				<div class="urluploadform" onclick="showHide('urlupload')">
-	            	<h3>Grab a file from the web</h3>
+				<div class="urluploadform">
+					<div onclick="showHide('urlupload')">
+	            		<h3>Grab a file from the web</h3>
+	            	</div>
 		            <div id="urlupload" style="display: none;">
 		                <p>Retrieves an input file from another location on the web.</p>
 		                <strong>Step 1)</strong><xsl:text> </xsl:text><em>First select the desired input type:</em><xsl:text> </xsl:text><select id="urluploadinputtemplate" class="inputtemplates"></select><br />
@@ -386,11 +388,13 @@
 
  			<xsl:if test="not(contains(/clam/@interfaceoptions,'disableliveinput'))">
 			
-				<div class="editoruploadform" onclick="showHide('editor')">
-		            <h3>Add input from browser</h3>
-		            <p>You can create and add new files on the spot from within your browser. Type your text, choose the desired input type, fill the necessary parameters and choose a filename. Press <em>"Add to files"</em> when all done.</p>
+				<div class="editoruploadform">
+					<div onclick="showHide('editor')">
+		            	<h3>Add input from browser</h3>
+		            </div>
 		
 					<div id="editor" style="display: none;">
+						<p>You can create and add new files on the spot from within your browser. Type your text, choose the desired input type, fill the necessary parameters and choose a filename. Press <em>"Add to files"</em> when all done.</p>
 		                <table>
 		                 <tr><th><label for="editorcontents">Input text:</label></th><td><textarea id="editorcontents"></textarea></td></tr>
 		                 <tr><th><label for="editorinputtemplate">Input type:</label></th><td>
