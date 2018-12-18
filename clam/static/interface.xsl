@@ -394,7 +394,7 @@
 			
 				<div class="editoruploadform">
 					<div onclick="showHide('editor');hide('clientupload');hide('urlupload');">
-		            	<h3> -> Add input from browser</h3>
+		            	<p> -> Add input from browser</p>
 		            </div>
 		
 					<div id="editor" style="display: none;">
