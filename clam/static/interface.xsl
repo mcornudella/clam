@@ -344,7 +344,7 @@
 
             <div class="uploadform">
             	<div onclick="showHide('clientupload');hide('urlupload');hide('editor');">
-                	<h3 style="text-decoration:none; font-weight: bold;">- Upload a file from disk</h3>
+                	<h3> <br> -> Upload a file from disk</br></h3>
                 </div>	
                 <div id="clientupload" style="display: none;" >
                 <p>Use this to upload files from your computer to the system.</p>
@@ -373,7 +373,7 @@
             <xsl:if test="contains(/clam/@interfaceoptions,'inputfromweb')">
 				<div class="urluploadform">
 					<div onclick="showHide('urlupload');hide('clientupload');hide('editor');">
-	            		<h3>- Grab a file from the web</h3>
+	            		<h3><br> -> Grab a file from the web</br></h3>
 	            	</div>
 		            <div id="urlupload" style="display: none;">
 		                <p>Retrieves an input file from another location on the web.</p>
@@ -394,7 +394,7 @@
 			
 				<div class="editoruploadform">
 					<div onclick="showHide('editor');hide('clientupload');hide('urlupload');">
-		            	<h3>- Add input from browser</h3>
+		            	<h3><br> -> Add input from browser</br></h3>
 		            </div>
 		
 					<div id="editor" style="display: none;">
@@ -661,7 +661,7 @@
 
         <xsl:if test="count(/clam/profiles/profile) > 0">
         <div id="startproject" class="box">
-            <h3>Start using the webservice</h3>
+            <h4>Start using the webservice</h4>
             	<!-- <p>A project is your personal workspace for a specific task; in a project you gather input files, set parameters for the system, monitor the system's progress and download and visualise your output files. Users can have and run multiple projects simultaneously. You can always come back to a project, regardless of the state it's in, until you explicitly delete it. To create a new project, enter a short unique identifier below <em>(no spaces or special characters allowed)</em>:</p>
                 Project ID: <input id="projectname" type="projectname" value="" />
                 <input id="startprojectbutton" type="button" value="Create project" />  -->
