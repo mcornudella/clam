@@ -135,10 +135,6 @@
     <script type="text/javascript" src="{/clam/@baseurl}/static/clam.js" />
 
     <script type="text/javascript">
-        <xsl:if test="not(/clam/@project)">
-                createprojectwithoutname();
-                <meta http-equiv="refresh" content="2" />
-        </xsl:if>
         <xsl:if test="status/@code = 1">
                 stage = 1;
                 progress = 0;
@@ -369,7 +365,7 @@
             </xsl:if>
 
             <xsl:if test="contains(/clam/@interfaceoptions,'inputfromweb')">
-
+			
             <h3>Grab a file from the web</h3>
             <div id="urlupload">
                 <p>Retrieves an input file from another location on the web.</p>
