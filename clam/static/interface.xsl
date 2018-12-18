@@ -338,7 +338,7 @@
 
             <xsl:if test="not(contains(/clam/@interfaceoptions,'disablefileupload'))">
 
-            <div class="uploadform" onclick="showHide(clientupload)">
+            <div class="uploadform" onclick="showHide('clientupload')">
                 <h3>Upload a file from disk</h3>
                 <p>Use this to upload files from your computer to the system.</p>
                 <div id="clientupload" style="display: none;" >
