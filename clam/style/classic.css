@@ -162,12 +162,12 @@ input.uploadbutton {
 }
 
 #tabs {
-	background: #E6DCCA;
+	background: #e6caca; /*#E6DCCA;*/
 }
 
 
 #tabs li.active {
-	background: #cfbf9d;
+	background: #cf9d9d; /*#cfbf9d;*/
 	color: white;
 	text-decoration: underline;
 	border:#cfbf9d solid 1px;
@@ -186,7 +186,7 @@ input.uploadbutton {
 	border-top-left-radius: 12px;
 	border-top-right-radius: 12px;	
 	border: #cbc3b1 solid 1px;
-	background: #cbc3b1;
+	background: #cbb1b1; /*#cbc3b1;*/
 	color: white;
 	padding-left: 5px;
 	padding-right: 5px;
