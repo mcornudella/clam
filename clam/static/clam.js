@@ -295,6 +295,10 @@ function showHide(spanId){ //added: show/hide input options
     document.getElementById(spanId).style.display= "none";
 }
 
+function hide(spanId){ //added: show/hide input options
+	document.getElementById(spanId).style.display= "none";
+}
+
 function createprojectwithoutname(){//added: create a random name for a project
 	
 	var randomprojectname = "project_" + new Date().getTime().toString(36) + "_" + Math.random().toString(36).substring(2, 15) ;

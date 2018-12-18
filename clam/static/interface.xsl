@@ -339,7 +339,7 @@
             <xsl:if test="not(contains(/clam/@interfaceoptions,'disablefileupload'))">
 
             <div class="uploadform">
-            	<div onclick="showHide('clientupload')">
+            	<div onclick="showHide('clientupload');hide('urlupload');hide('editor');">
                 	<h3>Upload a file from disk</h3>
                 </div>	
                 <div id="clientupload" style="display: none;" >
@@ -368,7 +368,7 @@
 
             <xsl:if test="contains(/clam/@interfaceoptions,'inputfromweb')">
 				<div class="urluploadform">
-					<div onclick="showHide('urlupload')">
+					<div onclick="showHide('urlupload');hide('clientupload');hide('editor');">
 	            		<h3>Grab a file from the web</h3>
 	            	</div>
 		            <div id="urlupload" style="display: none;">
@@ -389,7 +389,7 @@
  			<xsl:if test="not(contains(/clam/@interfaceoptions,'disableliveinput'))">
 			
 				<div class="editoruploadform">
-					<div onclick="showHide('editor')">
+					<div onclick="showHide('editor');hide('clientupload');hide('urlupload');">
 		            	<h3>Add input from browser</h3>
 		            </div>
 		
