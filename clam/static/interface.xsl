@@ -338,10 +338,10 @@
 
             <xsl:if test="not(contains(/clam/@interfaceoptions,'disablefileupload'))">
 
-            <div class="uploadform">
+            <div class="uploadform" onclick="showHide(clientupload)">
                 <h3>Upload a file from disk</h3>
                 <p>Use this to upload files from your computer to the system.</p>
-                <div id="clientupload" style="display: none;" onclick="showHide(clientupload)">
+                <div id="clientupload" style="display: none;" >
                     <strong>Step 1)</strong><xsl:text> </xsl:text><em>First select what type of file you want to add:</em><xsl:text> </xsl:text><select id="uploadinputtemplate" class="inputtemplates"></select><br />
                     <strong>Step 2)</strong><xsl:text> </xsl:text><em>Set the parameters for the file(s) you are about to upload:</em><xsl:text> </xsl:text><div id="uploadparameters" class="parameters"><em>Select a type first</em></div>
                     <strong>Step 3)</strong><xsl:text> </xsl:text><em>Click the upload button below and then select one or more files (holding control), you can also drag &amp; drop files onto the button from an external file manager</em><xsl:text> </xsl:text>
