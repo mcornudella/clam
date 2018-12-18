@@ -661,7 +661,7 @@
 
         <xsl:if test="count(/clam/profiles/profile) > 0">
         <div id="startproject" class="box">
-            <h4>Start using the webservice</h4>
+            <h2>Start using the webservice</h2>
             	<!-- <p>A project is your personal workspace for a specific task; in a project you gather input files, set parameters for the system, monitor the system's progress and download and visualise your output files. Users can have and run multiple projects simultaneously. You can always come back to a project, regardless of the state it's in, until you explicitly delete it. To create a new project, enter a short unique identifier below <em>(no spaces or special characters allowed)</em>:</p>
                 Project ID: <input id="projectname" type="projectname" value="" />
                 <input id="startprojectbutton" type="button" value="Create project" />  -->
