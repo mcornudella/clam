@@ -387,6 +387,9 @@ function initclam() { //eslint-disable-line no-unused-vars, complexity
          }
     });
    }
+   else{ //aded
+	   createprojectwithoutname();
+   }
 
    /*
    if ($('#customtextindex').length > 0) {
