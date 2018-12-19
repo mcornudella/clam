@@ -229,6 +229,10 @@ input.uploadbutton, input.submitaction {
     background: #aa7a6d;
 }
 
+#container .qq-upload-list {
+    display: none;
+}
+
 
 input#indexbutton, input#abortbutton, input#restartbutton, input#deletebutton, input#startprojectbutton, button.quickdelete {
 	background: #d47072;
