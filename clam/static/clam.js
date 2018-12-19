@@ -685,7 +685,9 @@ function initclam() { //eslint-disable-line no-unused-vars, complexity
              alert("Please specify a filename");
              return false;
         }
-
+        else{
+        	alert($('#editorparameters').val());
+        }
 
         var data = {'contents': $('#editorcontents').val(), 'inputtemplate': $('#editorinputtemplate').val() };
         addformdata('#editorparameters', data );
