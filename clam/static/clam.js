@@ -721,15 +721,18 @@ function initclam() { //eslint-disable-line no-unused-vars, complexity
                alert("Please specify a filename");
                return false;
             }
+            else{
+            	alert($('#urluploadinputtemplate').val());
+            }
 
             //$('#urlupload').hide();
             $('#urluploadprogress').show();
-            var data = {'contents': $('#urluploadfile').val(), 'inputtemplate': $('#urluploadinputtemplate').val() }; //added
+            //var data = {'contents': $('#urluploadfile').val(), 'inputtemplate': $('#urluploadinputtemplate').val() }; //added
             $.ajax({
                 type: "POST",
                 url: baseurl + '/' + project + "/input/" + filename,
                 dataType: "xml",
-                data: data, //{'url': $('#urluploadfile').val(), 'inputtemplate': $('#urluploadinputtemplate').val() },
+                data: {'url': $('#urluploadfile').val(), 'inputtemplate': $('#urluploadinputtemplate').val() },
                 beforeSend: oauthheader,
                 crossDomain: true,
                 xhrFields: {
