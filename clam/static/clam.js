@@ -729,7 +729,7 @@ function initclam() { //eslint-disable-line no-unused-vars, complexity
                 type: "POST",
                 url: baseurl + '/' + project + "/input/" + filename,
                 dataType: "xml",
-                data: data//{'url': $('#urluploadfile').val(), 'inputtemplate': $('#urluploadinputtemplate').val() },
+                data: data, //{'url': $('#urluploadfile').val(), 'inputtemplate': $('#urluploadinputtemplate').val() },
                 beforeSend: oauthheader,
                 crossDomain: true,
                 xhrFields: {
