@@ -378,8 +378,8 @@
 		            <div id="urlupload" style="display: none;">
 		                <p>Retrieves an input file from another location on the web.</p>
 		                <strong>Step 1)</strong><xsl:text> </xsl:text><em>First select the desired input type:</em><xsl:text> </xsl:text><select id="urluploadinputtemplate" class="inputtemplates"></select><br />
-		                <strong>Step 3)</strong><xsl:text> </xsl:text><em>Enter the URL where to retrieve the file</em><xsl:text> </xsl:text><input id="urluploadfile" value="http://" /><br />
 		                <strong>Step 2)</strong><xsl:text> </xsl:text><em>Set the parameters for the file you are adding:</em><xsl:text> </xsl:text><div id="urluploadparameters" class="parameters"><em>Select a type first</em></div>
+		                <strong>Step 3)</strong><xsl:text> </xsl:text><em>Enter the URL where to retrieve the file</em><xsl:text> </xsl:text><input id="urluploadfile" value="http://" /><br />
 		                <strong>Step 4)</strong><xsl:text> </xsl:text><input id="urluploadsubmit" class="uploadbutton" type="submit" value="Retrieve and add file" />
 		            </div>
 				</div>

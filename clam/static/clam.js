@@ -724,7 +724,7 @@ function initclam() { //eslint-disable-line no-unused-vars, complexity
             //$('#urlupload').hide();
             $('#urluploadprogress').show();
             var data = {'contents': $('#urluploadfile').val(), 'inputtemplate': $('#urluploadinputtemplate').val() }; //added
-            addformdata('#editorparameters', data ); //added
+            addformdata('#urluploadparameters', data ); //added
             $.ajax({
                 type: "POST",
                 url: baseurl + '/' + project + "/input/" + filename,
