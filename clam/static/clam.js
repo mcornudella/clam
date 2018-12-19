@@ -722,7 +722,7 @@ function initclam() { //eslint-disable-line no-unused-vars, complexity
                return false;
             }
             else{
-            	alert($('#urluploadinputtemplate').val());
+            	alert($('#urluploadparameters').val());
             }
 
             //$('#urlupload').hide();
