@@ -451,7 +451,7 @@ function initclam() { //eslint-disable-line no-unused-vars, complexity
         if (duplicate) continue;
         processed.push(inputtemplates[i].id);
         var selected;
-        if ((i === 0) && (preselectinputtemplate) ) {
+        if ((i === 0) ){ //&& (preselectinputtemplate) ) {
             selected='selected="selected"';
         } else {
             selected="";
