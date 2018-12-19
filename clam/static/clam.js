@@ -456,7 +456,7 @@ function initclam() { //eslint-disable-line no-unused-vars, complexity
 
    //Tying events to trigger rendering of file-parameters when an inputtemplate is selected: 
    $("#uploadinputtemplate").change(function(){renderfileparameters($('#uploadinputtemplate').val(),'#uploadparameters',true); });
-   $("#urluploadinputtemplate").change(function(){renderfileparameters($('#urluploadinputtemplate').val(),'#urluploadparameters',false); });
+   $("#urluploadinputtemplate").change(function(){renderfileparameters($('#urluploadinputtemplate').val(),'#urluploadparameters',true); });
    $("#editorinputtemplate").change(function(){
         renderfileparameters($('#editorinputtemplate').val(),'#editorparameters',false);
         var inputtemplate = getinputtemplate($('#editorinputtemplate').val());
@@ -723,12 +723,13 @@ function initclam() { //eslint-disable-line no-unused-vars, complexity
 
             //$('#urlupload').hide();
             $('#urluploadprogress').show();
-            //var data = {'contents': $('#urluploadfile').val(), 'inputtemplate': $('#urluploadinputtemplate').val() }; //added
+            var data = {'contents': $('#urluploadfile').val(), 'inputtemplate': $('#urluploadinputtemplate').val() }; //added
+            addformdata('#editorparameters', data ); //added
             $.ajax({
                 type: "POST",
                 url: baseurl + '/' + project + "/input/" + filename,
                 dataType: "xml",
-                data: {'url': $('#urluploadfile').val(), 'inputtemplate': $('#urluploadinputtemplate').val() },
+                data: data, //{'url': $('#urluploadfile').val(), 'inputtemplate': $('#urluploadinputtemplate').val() },
                 beforeSend: oauthheader,
                 crossDomain: true,
                 xhrFields: {
