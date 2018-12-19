@@ -454,9 +454,9 @@ function initclam() { //eslint-disable-line no-unused-vars, complexity
    $(".inputtemplates").html(inputtemplate_options);
 
 
-   //Tying events to trigger rendering of file-parameters when an inputtemplate is selected:
+   //Tying events to trigger rendering of file-parameters when an inputtemplate is selected: 
    $("#uploadinputtemplate").change(function(){renderfileparameters($('#uploadinputtemplate').val(),'#uploadparameters',true); });
-   $("#urluploadinputtemplate").change(function(){renderfileparameters($('#urluploadinputtemplate').val(),'#urluploadparameters',true);});
+   $("#urluploadinputtemplate").change(function(){renderfileparameters($('#urluploadinputtemplate').val(),'#urluploadparameters',false); });
    $("#editorinputtemplate").change(function(){
         renderfileparameters($('#editorinputtemplate').val(),'#editorparameters',false);
         var inputtemplate = getinputtemplate($('#editorinputtemplate').val());
@@ -685,9 +685,6 @@ function initclam() { //eslint-disable-line no-unused-vars, complexity
              alert("Please specify a filename");
              return false;
         }
-        else{
-        	alert($('#editorparameters').val());
-        }
 
         var data = {'contents': $('#editorcontents').val(), 'inputtemplate': $('#editorinputtemplate').val() };
         addformdata('#editorparameters', data );
@@ -722,9 +719,6 @@ function initclam() { //eslint-disable-line no-unused-vars, complexity
             if (!filename) {
                alert("Please specify a filename");
                return false;
-            }
-            else{
-            	alert($('#urluploadparameters').val());
             }
 
             //$('#urlupload').hide();
