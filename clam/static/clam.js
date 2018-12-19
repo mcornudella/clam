@@ -722,14 +722,14 @@ function initclam() { //eslint-disable-line no-unused-vars, complexity
                return false;
             }
 
-            $('#urlupload').hide();
+            //$('#urlupload').hide();
             $('#urluploadprogress').show();
-
+            var data = {'contents': $('#urluploadfile').val(), 'inputtemplate': $('#urluploadinputtemplate').val() }; //added
             $.ajax({
                 type: "POST",
                 url: baseurl + '/' + project + "/input/" + filename,
                 dataType: "xml",
-                data: {'url': $('#urluploadfile').val(), 'inputtemplate': $('#urluploadinputtemplate').val() },
+                data: data//{'url': $('#urluploadfile').val(), 'inputtemplate': $('#urluploadinputtemplate').val() },
                 beforeSend: oauthheader,
                 crossDomain: true,
                 xhrFields: {
