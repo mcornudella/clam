@@ -431,14 +431,14 @@ function initclam() { //eslint-disable-line no-unused-vars, complexity
     */
 
    //Create lists of all possible inputtemplates (aggregated over all profiles)
-   if (inputtemplates.length != 1){
-	   var inputtemplate_options = "<option value=\"\">Select a filetype...</option>";
-   }
-   else{
-	   var inputtemplate_options = "";
-   }
+   //if (inputtemplates.length != 1){
+	//   var inputtemplate_options = "<option value=\"\">Select a filetype...</option>";
+   //}
+   //else{
+	 //  var inputtemplate_options = "";
+   //}
 	   
-   //var inputtemplate_options = "<option value=\"\">Select a filetype...</option>";
+   var inputtemplate_options = "<option value=\"\">Select a filetype...</option>";
    var processed = [];
    for (var i = 0; i < inputtemplates.length; i++) {
         var duplicate = false;
@@ -451,7 +451,7 @@ function initclam() { //eslint-disable-line no-unused-vars, complexity
         if (duplicate) continue;
         processed.push(inputtemplates[i].id);
         var selected;
-        if ((i === 0) ){ //&& (preselectinputtemplate) ) {
+        if ((i === 0) )&& (preselectinputtemplate) ) {
             selected='selected="selected"';
         } else {
             selected="";
