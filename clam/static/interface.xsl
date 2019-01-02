@@ -413,7 +413,7 @@
 		            </div>
 				</div>
             </xsl:if>
-            
+            <em>Select the desired input type:</em><select id="selectinputtemplate" class="inputtemplates"></select>
             <div id="specifiparameters" class="parameters"><em>Select a type first</em></div>
 
         </div>
