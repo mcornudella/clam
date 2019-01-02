@@ -464,7 +464,6 @@ function initclam() { //eslint-disable-line no-unused-vars, complexity
    //Tying events to trigger rendering of file-parameters when an inputtemplate is selected: 
    $("#uploadinputtemplate").change(function(){renderfileparameters($('#uploadinputtemplate').val(),'#uploadparameters',true); });
    $("#urluploadinputtemplate").change(function(){renderfileparameters($('#urluploadinputtemplate').val(),'#urluploadparameters',true); });
-   $("#selectinputtemplate").change(function(){renderfileparameters($('#selectinputtemplate').val(),'#selectparameters',true); });
    $("#editorinputtemplate").change(function(){
         renderfileparameters($('#editorinputtemplate').val(),'#editorparameters',false);
         var inputtemplate = getinputtemplate($('#editorinputtemplate').val());
@@ -479,6 +478,11 @@ function initclam() { //eslint-disable-line no-unused-vars, complexity
             $('.editorfilenamerow').show();
         }
     });
+   
+   //Added
+   $("#selectinputtemplate").change(function(){
+	   renderfileparameters($('#selectinputtemplate').val(),'#selectparameters',true); 
+	   });
 
    if (typeof(stage) != 'undefined') {
        //Download parameters.xsl so it's available to javascript for file-parameters

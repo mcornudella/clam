@@ -413,8 +413,6 @@
 		            </div>
 				</div>
             </xsl:if>
-            <em>Select the desired input type:</em><select id="selectinputtemplate" class="inputtemplates"></select>
-            <div id="selectparameters" class="parameters"><em>Select a type first</em></div>
 
         </div>
 </xsl:template>
@@ -550,15 +548,18 @@
     <div id="parameters" class="box parameters">
         <!--  <h2>Parameter Selection</h2>  -->
 
-        <xsl:for-each select="parametergroup">
+        <!--<xsl:for-each select="parametergroup">
           <h3><xsl:value-of select="@name" /></h3>
          <table>
           <xsl:apply-templates />
          </table>
-        </xsl:for-each>
+        </xsl:for-each> -->
 
         <input id="usecorpus" name="usecorpus" type="hidden" value="" />
-
+        
+        <h3>Choose parameters: </h3>
+        <em>Select the desired input type:</em><select id="selectinputtemplate" class="inputtemplates"></select>
+        <div id="selectparameters" class="parameters"><em>Select a type first</em></div>
 
         <div id="startbutton">
             <input type="submit" class="start" value="Run" />
