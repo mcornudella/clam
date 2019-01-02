@@ -386,6 +386,9 @@ function initclam() { //eslint-disable-line no-unused-vars, complexity
             event.preventDefault();
          }
     });
+   } else
+   {
+	   createrandomproject()
    }
 
    /*
