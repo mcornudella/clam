@@ -413,6 +413,8 @@
 		            </div>
 				</div>
             </xsl:if>
+            
+            <div id="specifiparameters" class="parameters"><em>Select a type first</em></div>
 
         </div>
 </xsl:template>
