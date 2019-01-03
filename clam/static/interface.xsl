@@ -451,8 +451,6 @@
                 <xsl:apply-templates select="file" />
             </tbody>
         </table>
-        </div>
-        
         <script>
         function myFunction() {
     		if ( ! $('#inputfiles').data().count() ) {
@@ -460,7 +458,9 @@
 			}
     	}
 		</script>
-		<!--  <xsl:if test="count(/clam/profiles/profile) > 0"> -->
+        </div>
+        
+  		<!--  <xsl:if test="count(/clam/profiles/profile) > 0"> -->
         <!--  <xsl:when test="count(inputfiles/file/) &gt; 0 ">
             <h3>Contains some elements</h3>
         </xsl:when>
