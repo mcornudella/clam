@@ -452,7 +452,7 @@
             </tbody>
         </table>
         <script>
-        alert( 'Number of rows: '+ $('#inputfiles').DataTable().data().count() );
+        alert( 'Number of rows: '+ tableinputfiles.fnGetData().length );
 		</script>
         </div>
         
