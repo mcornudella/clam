@@ -785,7 +785,7 @@ function initclam() { //eslint-disable-line no-unused-vars, complexity
                     return false;
                 }
                 var params = {inputtemplate: inputtemplate_id, user:user, accesstoken:accesstoken };
-                addformdata('#selectparameters', data );//addformdata( '#uploadparameters', params );
+                addformdata( '#selectparameters', params );//addformdata( '#uploadparameters', params );
                 $(this).fineUploader('setParams',params);
 
                 return true;
