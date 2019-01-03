@@ -456,7 +456,7 @@
         function myFunction() {
         	var table = $('#inputfiles').DataTable();
  
-			alert( 'Number of rows: '+.data().count() );
+			alert( 'Number of rows: '+ table.data().count() );
     	}
 		</script>
         </div>
