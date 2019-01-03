@@ -2391,8 +2391,8 @@ def resolveoutputfilename(filename, globalparameters, localparameters, outputtem
     #BACKWARD COMPATIBILITY:
     if not outputtemplate.unique:
         if '#' in filename: #resolve number in filename
-            filename = filename.replace('#',str(nextseq)
-
+            filename = filename.replace('#',str(nextseq))
+            
     clam.common.util.printdebug("Determined output filename: " + filename)
 
     return filename
