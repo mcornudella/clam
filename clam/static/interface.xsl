@@ -452,12 +452,7 @@
             </tbody>
         </table>
         <script>
-        
-        function myFunction() {
-        	var table = $('#inputfiles').DataTable();
- 
-			alert( 'Number of rows: '+ table.data().count() );
-    	}
+        alert( 'Number of rows: '+ $('#inputfiles').DataTable().data().count() );
 		</script>
         </div>
         
