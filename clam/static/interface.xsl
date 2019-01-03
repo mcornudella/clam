@@ -561,8 +561,8 @@
         <em>Select the desired input type:</em><select id="selectinputtemplate" class="inputtemplates"></select>
         <div id="selectparameters" class="parameters"><em>Select a type first</em></div>
 
-        <div id="startbutton" disabled="true">
-            <input type="submit" class="start" value="Run"/>
+        <div id="startbutton">
+            <button id="buttonstartbutton" type="submit" class="start" value="Run" disabled="disabled"/>
         </div>
     </div>
     </form>
