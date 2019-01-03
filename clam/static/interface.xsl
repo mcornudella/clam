@@ -458,7 +458,7 @@
         </div>
         
         <script>
-    		alert( $('#inputfiles_info') );
+    		alert( $('#inputfiles_info').val() );
 		</script>
 		<!--  <xsl:if test="count(/clam/profiles/profile) > 0"> -->
         <!--  <xsl:when test="count(inputfiles/file/) &gt; 0 ">
