@@ -452,15 +452,7 @@
             </tbody>
         </table>
         <script>
-        function myFunction() {
-    		if ( ! $('#inputfiles').data().count() ) {
-    			alert( 'Empty table' );
-			}
-			else
-			{
-				alert( $('#inputfiles').data().count() );
-			}
-    	}
+        alert( $('#inputfiles').data().count() );
 		</script>
         </div>
         
