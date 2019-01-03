@@ -453,8 +453,12 @@
         </table>
         </div>
         
+        <p id="demo"></p>
         <script>
-    		alert( document.getElementById('#inputfiles_info').innerHTML );
+        function myFunction() {
+    		var x = document.getElementById('#inputfiles_info').innerHTML;
+    		document.getElementById("demo").innerHTML = x;
+    		}
 		</script>
 		<!--  <xsl:if test="count(/clam/profiles/profile) > 0"> -->
         <!--  <xsl:when test="count(inputfiles/file/) &gt; 0 ">
