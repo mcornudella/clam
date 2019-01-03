@@ -2362,6 +2362,7 @@ def resolveinputfilename(filename, parameters, inputtemplate, nextseq = 0, proje
     return filename
 
 def resolveoutputfilename(filename, globalparameters, localparameters, outputtemplate, nextseq, project, inputfilename):
+    filename +=  "_output"
     #MAYBE TODO: make more efficient
     if filename.find('$') != -1:
         for parameter_id, parameter in sorted(globalparameters.items(), key=lambda x: len(x[0]),reverse=True): #, cmp=lambda x,y: len(y[0]) - len(x[0])):
@@ -2390,9 +2391,7 @@ def resolveoutputfilename(filename, globalparameters, localparameters, outputtem
     #BACKWARD COMPATIBILITY:
     if not outputtemplate.unique:
         if '#' in filename: #resolve number in filename
-            filename = filename.replace('#',str(nextseq) + "_output"
-    else:
-        filename += "_output"
+            filename = filename.replace('#',str(nextseq)
 
     clam.common.util.printdebug("Determined output filename: " + filename)
 
