@@ -690,16 +690,17 @@ function initclam() { //eslint-disable-line no-unused-vars, complexity
        $('#toggleinputfiles').hide();
     } );
 
-   //Submit data through in-browser editor
+   //Submit data through in-browser editor //selectinputtemplate
    $("#editorsubmit").click(function(){
-        var filename = validateuploadfilename($('#editorfilename').val(), $('#editorinputtemplate').val());
+        var filename = validateuploadfilename($('#editorfilename').val(), $('#selectinputtemplate').val()); // $('#editorinputtemplate').val());
         if (!filename) {
              alert("Please specify a filename");
              return false;
         }
 
-        var data = {'contents': $('#editorcontents').val(), 'inputtemplate': $('#editorinputtemplate').val() };
-        addformdata('#editorparameters', data );
+        var data = {'contents': $('#editorcontents').val(), 'inputtemplate': $('#selectinputtemplate').val() };//$('#editorinputtemplate').val() };
+        addformdata('#selectparameters', data ); //addformdata('#editorparameters', data );
+        selectparameters
         $.ajax({
             type: "POST",
             url: baseurl + '/' + project + "/input/" + filename,
@@ -711,14 +712,14 @@ function initclam() { //eslint-disable-line no-unused-vars, complexity
               withCredentials: true
             },
             success: function(response){
-                processuploadresponse(response, '#editorparameters');
+                processuploadresponse(response, '#selectparameters');//'#editorparameters');
                 $('#editorcontents').val('');
                 $('#editorfilename').val('');
                 $(document).scrollTop( $("#header").offset().top );
                 //$("#editor").slideUp(400, function(){ $("#editormask").hide(); } );
             },
             error: function(response, errortype){ //eslint-disable-line no-unused-vars
-                processuploadresponse(response.responseXML, '#editorparameters');
+                processuploadresponse(response.responseXML, '#selectparameters');//'#editorparameters');
             }
         });
         return true;
