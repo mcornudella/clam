@@ -452,10 +452,9 @@
             </tbody>
         </table>
         </div>
+        
         <script>
-		if ( ! $('#inputfiles').data().count() ) {
-    		alert( 'Empty table' );
-		}
+    		alert( $('#inputfiles').sEmptyTable );
 		</script>
 		<!--  <xsl:if test="count(/clam/profiles/profile) > 0"> -->
         <!--  <xsl:when test="count(inputfiles/file/) &gt; 0 ">
