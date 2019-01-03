@@ -728,7 +728,7 @@ function initclam() { //eslint-disable-line no-unused-vars, complexity
 
    //Download and add from URL
    $('#urluploadsubmit').click(function(){
-            var filename = validateuploadfilename($('#urluploadfile').val().split('/').reverse()[0] ,$('#urluploadinputtemplate').val());
+            var filename = validateuploadfilename($('#urluploadfile').val().split('/').reverse()[0], $('#selectinputtemplate').val()); //$('#urluploadinputtemplate').val());
             if (!filename) {
                alert("Please specify a filename");
                return false;
@@ -736,8 +736,8 @@ function initclam() { //eslint-disable-line no-unused-vars, complexity
 
             //$('#urlupload').hide();
             $('#urluploadprogress').show();
-            var data = {'url': $('#urluploadfile').val(), 'inputtemplate': $('#urluploadinputtemplate').val() }; //added
-            addformdata('#urluploadparameters', data ); //added
+            var data = {'url': $('#urluploadfile').val(), 'inputtemplate': $('#selectinputtemplate').val() }; // $('#urluploadinputtemplate').val() }; //added
+            addformdata('#selectparameters', data ); //addformdata('#urluploadparameters', data ); //added
             $.ajax({
                 type: "POST",
                 url: baseurl + '/' + project + "/input/" + filename,
@@ -749,12 +749,12 @@ function initclam() { //eslint-disable-line no-unused-vars, complexity
                   withCredentials: true
                 },
                 success: function(response){
-                    processuploadresponse(response, '#urluploadparameters');
+                    processuploadresponse(response, '#selectparameters');//'#urluploadparameters');
                     $('#urluploadprogress').hide();
                     $('#urlupload').show();
                 },
                 error: function(response, errortype){ //eslint-disable-line no-unused-vars
-                    processuploadresponse(response.responseXML, '#urluploadparameters');
+                    processuploadresponse(response.responseXML, '#selectparameters');//'#urluploadparameters');
                     $('#urluploadprogress').hide();
                     $('#urlupload').show();
                 }
@@ -779,13 +779,13 @@ function initclam() { //eslint-disable-line no-unused-vars, complexity
             },
             debug: true
         }).on('submit', function(e, id, fileName) { //eslint-disable-line no-unused-vars
-                var inputtemplate_id = $('#uploadinputtemplate').val();
+                var inputtemplate_id = $('#selectinputtemplate').val(); //$('#uploadinputtemplate').val();
                 if (inputtemplate_id === "") {
                     alert("Please select a desired input type first");
                     return false;
                 }
                 var params = {inputtemplate: inputtemplate_id, user:user, accesstoken:accesstoken };
-                addformdata( '#uploadparameters', params );
+                addformdata('#selectparameters', data );//addformdata( '#uploadparameters', params );
                 $(this).fineUploader('setParams',params);
 
                 return true;
@@ -798,10 +798,10 @@ function initclam() { //eslint-disable-line no-unused-vars, complexity
                     }
                     return true;
                 }
-                processuploadresponse(responseJSON.xml, '#uploadparameters');
+                processuploadresponse(responseJSON.xml, '#selectparameters');//'#uploadparameters');
 
         }).on('click',function(){
-                var inputtemplate_id = $('#uploadinputtemplate').val();
+                var inputtemplate_id = $('#selectinputtemplate').val();//$('#uploadinputtemplate').val();
                 if (inputtemplate_id === "") {
                     alert("Please select a desired input type first");
                     return false;
@@ -811,16 +811,16 @@ function initclam() { //eslint-disable-line no-unused-vars, complexity
 
    //simpleupload:
    if ( (typeof($('#uploadbutton')[0]) != 'undefined') && (typeof(project) != 'undefined') ) {
-       uploader = new AjaxUpload('uploadbutton', {action: baseurl + "/" + project + "/input/", name: "file", data: {"inputtemplate": $("#uploadinputtemplate").val()} ,
+       uploader = new AjaxUpload('uploadbutton', {action: baseurl + "/" + project + "/input/", name: "file", data: {"inputtemplate": $('#selectinputtemplate').val()} , //$("#uploadinputtemplate").val()} ,
             onChange: function(uploadfilename,extension){ //eslint-disable-line no-unused-vars
-                 var inputtemplate_id = $('#uploadinputtemplate').val();
+                 var inputtemplate_id = $('#selectinputtemplate').val();//$('#uploadinputtemplate').val();
                  var filename = validateuploadfilename(uploadfilename,inputtemplate_id);
                  if (!filename) {
                     return false;
                  } else {
                      uploader._settings.action = baseurl + "/" + project + "/input/" + filename;
                      uploader._settings.data.inputtemplate = inputtemplate_id;
-                     addformdata( '#uploadparameters', uploader._settings.data );
+                     addformdata('#selectparameters', uploader._settings.data );// addformdata( '#uploadparameters', uploader._settings.data );
                  }
             },
             onSubmit: function(){
@@ -828,7 +828,7 @@ function initclam() { //eslint-disable-line no-unused-vars, complexity
                 $('#uploadprogress').hide();
             },
             onComplete: function(file, response){ //eslint-disable-line no-unused-vars
-                processuploadresponse(response, "#uploadparameters");
+                processuploadresponse(response, '#selectparameters');//"#uploadparameters");
                 $('#uploadprogress').hide();
                 //$('#clientupload').show();
             }
