@@ -624,21 +624,26 @@
 			<script>createrandomproject();</script>
 		</div>
 
+		<!--  
         <xsl:if test="/clam/@oauth_access_token != ''">
           <xsl:call-template name="logout"/>
-        </xsl:if>
+        </xsl:if> 
+        -->
 
 		<!--  
         <div id="description" class="box">
          <xsl:value-of select="description" />
         </div> 
         --> 
+        <!--  
         <xsl:if test="/clam/customhtml">
             <div id="customhtml" class="box">
                 <xsl:value-of select="/clam/customhtml" disable-output-escaping="yes" />
             </div>
         </xsl:if>
+        -->
 
+		<!--  
         <xsl:if test="count(/clam/actions/action) > 0">
             <div id="actionindex" class="box parameters">
                 <h2>Actions</h2>
@@ -664,17 +669,20 @@
                 </xsl:for-each>
             </div>
         </xsl:if>
-
+		-->
         <xsl:if test="count(/clam/profiles/profile) > 0">
         <!-- onload="createrandomproject()"  -->
+        <!--  
         <div id="startproject" class="box">
-            <h2>Start using the webservice</h2>
+            <h2>Start using the webservice</h2> -->
             	<!-- <p>A project is your personal workspace for a specific task; in a project you gather input files, set parameters for the system, monitor the system's progress and download and visualise your output files. Users can have and run multiple projects simultaneously. You can always come back to a project, regardless of the state it's in, until you explicitly delete it. To create a new project, enter a short unique identifier below <em>(no spaces or special characters allowed)</em>:</p>
                 Project ID: <input id="projectname" type="projectname" value="" />
                 <input id="startprojectbutton" type="button" value="Create project" />  -->
                 <!-- <script>createrandomproject();</script> -->
+                <!--  
                 <button onclick="createrandomproject()">Start using the web service</button>
-        </div>
+        </div> 
+        -->
         <!--
         <div id="index" class="box">
         <h2>Projects</h2>
