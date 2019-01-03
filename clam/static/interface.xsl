@@ -451,22 +451,8 @@
                 <xsl:apply-templates select="file" />
             </tbody>
         </table>
-        <script>
-        alert( 'Number of rows: '+ tableinputfiles.fnGetData().length );
-		</script>
         </div>
-        
-  		<!--  <xsl:if test="count(/clam/profiles/profile) > 0"> -->
-        <!--  <xsl:when test="count(inputfiles/file/) &gt; 0 ">
-            <h3>Contains some elements</h3>
-        </xsl:when>
-        <xsl:otherwise>
-        	<h3>Empty</h3>
-        </xsl:otherwise> --> 
-        <!--  <h3><xsl:value-of select="count(/inputfiles/file)"/></h3> -->
-        <!-- <xsl:if> 
-		</xsl:if> -->
-        
+                
 </xsl:template>
 
 <xsl:template match="/clam/output">
@@ -575,7 +561,7 @@
         <em>Select the desired input type:</em><select id="selectinputtemplate" class="inputtemplates"></select>
         <div id="selectparameters" class="parameters"><em>Select a type first</em></div>
 
-        <div id="startbutton">
+        <div id="startbutton" disabled>
             <input type="submit" class="start" value="Run" />
         </div>
     </div>

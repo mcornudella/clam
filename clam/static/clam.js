@@ -54,8 +54,19 @@ function validateuploadfilename(filename, inputtemplate_id) {
     return filename;
 }
 
-
-
+function AllowRunning?(){
+	if (tableinputfiles.fnGetData().length == 0)
+	{
+		//return True;
+		document.getElementById("startbutton").disabled = true;
+	}
+	else
+	{
+		//return False;
+		document.getElementById("startbutton").disabled = false;
+	}
+}
+		
 
 function renderfileparameters(id, target, enableconverters, parametersxmloverride) {
     if (id === "") {
@@ -139,6 +150,7 @@ function deleteinputfile(filename) {   //eslint-disable-line no-unused-vars
         url: baseurl + '/' + project + "/input/" + filename,
         dataType: "xml"
     });
+    if(tableinputfiles.fnGetData().length == 0) document.getElementById("startbutton").disabled = true;
 }
 
 function setinputsource(tempelement) { //eslint-disable-line no-unused-vars
@@ -270,6 +282,7 @@ function processuploadresponse(response, paramdiv) {
             //Add this file to the input table if it doesn't exist yet
             if (!found) {
                 tableinputfiles.fnAddData( [  '<a href="' + baseurl + '/' + project + '/input/' + $(this).attr('filename') + '">' + $(this).attr('filename') + '</a>', $(this).attr('templatelabel'), $(this).attr('format') ,'<img src="' + baseurl + '/static/delete.png" title="Delete this file" onclick="deleteinputfile(\'' + $(this).attr('filename') + '\');" />' ] );
+                if(tableinputfiles.fnGetData().length == 0) document.getElementById("startbutton").disabled = false;
             }
 
         }
