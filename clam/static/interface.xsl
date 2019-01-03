@@ -452,7 +452,13 @@
             </tbody>
         </table>
         </div>
-        <h2><xsl:value-of select="count(/inputfiles/file)"/></h2>
+        <xsl:when test="count(/inputfiles/file) = '0' ">
+                <h3>Empty</h3>
+            </xsl:when>
+            <xsl:otherwise>
+                <h3>Contains some elements</h3>
+            </xsl:otherwise>
+        <!--  <h3><xsl:value-of select="count(/inputfiles/file)"/></h3> -->
         <!-- <xsl:if> 
 		</xsl:if> -->
         
