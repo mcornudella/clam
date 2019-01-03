@@ -621,6 +621,7 @@
 				<li class="disabled">3. Processing</li>
 				<li class="disabled">4. Output &amp; Visualisation</li>
 			</ol>
+			<script>createrandomproject();</script>
 		</div>
 
         <xsl:if test="/clam/@oauth_access_token != ''">
@@ -671,7 +672,7 @@
             	<!-- <p>A project is your personal workspace for a specific task; in a project you gather input files, set parameters for the system, monitor the system's progress and download and visualise your output files. Users can have and run multiple projects simultaneously. You can always come back to a project, regardless of the state it's in, until you explicitly delete it. To create a new project, enter a short unique identifier below <em>(no spaces or special characters allowed)</em>:</p>
                 Project ID: <input id="projectname" type="projectname" value="" />
                 <input id="startprojectbutton" type="button" value="Create project" />  -->
-                <script>createrandomproject();</script>
+                <!-- <script>createrandomproject();</script> -->
                 <button onclick="createrandomproject()">Start using the web service</button>
         </div>
         <!--
