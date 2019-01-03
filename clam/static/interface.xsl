@@ -453,12 +453,12 @@
         </table>
         </div>
         
-        <p id="demo"></p>
         <script>
         function myFunction() {
-    		var x = document.getElementById('#inputfiles_info').innerHTML;
-    		document.getElementById("demo").innerHTML = x;
-    		}
+    		if ( ! $('#inputfiles').data().count() ) {
+    			alert( 'Empty table' );
+			}
+    	}
 		</script>
 		<!--  <xsl:if test="count(/clam/profiles/profile) > 0"> -->
         <!--  <xsl:when test="count(inputfiles/file/) &gt; 0 ">
