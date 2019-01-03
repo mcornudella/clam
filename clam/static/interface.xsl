@@ -452,6 +452,9 @@
             </tbody>
         </table>
         </div>
+        <h2><xsl:value-of select="count(/inputfiles/file)"/></h2>
+        <!-- <xsl:if> 
+		</xsl:if> -->
         
 </xsl:template>
 
