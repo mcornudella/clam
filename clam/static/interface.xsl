@@ -451,10 +451,14 @@
                 <xsl:apply-templates select="file" />
             </tbody>
         </table>
+        <xsl:choose>
+        <xsl:when test="AddInfo">Yep</xsl:when>
+        <xsl:otherwise>Nope</xsl:otherwise>
+      </xsl:choose>
         </div>
         
         <script>
-    		alert( $('#inputfiles').sEmptyTable );
+    		alert( $('#inputfiles_info') );
 		</script>
 		<!--  <xsl:if test="count(/clam/profiles/profile) > 0"> -->
         <!--  <xsl:when test="count(inputfiles/file/) &gt; 0 ">
