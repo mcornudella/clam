@@ -52,21 +52,7 @@ function validateuploadfilename(filename, inputtemplate_id) {
         }
     }
     return filename;
-}
-
-function AllowRunning?(){
-	if (tableinputfiles.fnGetData().length == 0)
-	{
-		//return True;
-		document.getElementById("startbutton").disabled = true;
-	}
-	else
-	{
-		//return False;
-		document.getElementById("startbutton").disabled = false;
-	}
-}
-		
+}		
 
 function renderfileparameters(id, target, enableconverters, parametersxmloverride) {
     if (id === "") {
