@@ -2392,7 +2392,6 @@ def resolveoutputfilename(filename, globalparameters, localparameters, outputtem
         if '#' in filename: #resolve number in filename
             filename = filename.replace('#',str(nextseq))
     
-    filename = "output_" + filename
     clam.common.util.printdebug("Determined output filename: " + filename)
 
     return filename
