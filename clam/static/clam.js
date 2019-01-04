@@ -271,7 +271,8 @@ function processuploadresponse(response, paramdiv) {
                 if(tableinputfiles.fnGetData().length != 0) 
                 	{
                 	document.getElementById("buttonstartbutton").disabled = false;
-                	document.getElementById("startbutton").style.color="green"
+                	document.getElementById("buttonstartbutton").style.background="green";
+                	document.getElementById("startbutton").style.background="green";
                 	}
             }
 
