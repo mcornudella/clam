@@ -562,7 +562,7 @@
         <div id="selectparameters" class="parameters"><em>Select a type first</em></div>
 
         <div id="startbutton">
-            <input id="buttonstartbutton" type="button"  class="start" value="Run" disabled="disabled"/> <!--  type="submit" -->
+            <input id="buttonstartbutton" type="submit" class="start" value="Run" disabled="disabled"/> <!--  type="submit" -->
         </div>
     </div>
     </form>
