@@ -23,17 +23,6 @@ function oauthheader(req) {
   }
 }
 
-function changeClass(object,oldClass,newClass)
-{
-    // remove:
-    //object.className = object.className.replace( /(?:^|\s)oldClass(?!\S)/g , '' );
-    // replace:
-    var regExp = new RegExp('(?:^|\\s)' + oldClass + '(?!\\S)', 'g');
-    object.className = object.className.replace( regExp , newClass );
-    // add
-    //object.className += " "+newClass;
-}
-
 function getinputtemplate(id) {
     for (var i = 0; i < inputtemplates.length; i++) {
         if (inputtemplates[i].id === id) {
@@ -151,7 +140,9 @@ function deleteinputfile(filename) {   //eslint-disable-line no-unused-vars
     	{
     		document.getElementById("buttonstartbutton").disabled = true;
     		document.getElementById("buttonstartbutton").style.background="#686868";
-    		changeClass(document.getElementById("buttonstartbutton"), "div#startbutton_enabled input:hover", "div#startbutton input:hover");
+    		document.getElementById("buttonstartbutton").onmouseover = function() {
+    	    	this.style.backgroundColor = "grey";
+    		}
     	}
 }
 
@@ -288,7 +279,9 @@ function processuploadresponse(response, paramdiv) {
                 	{
                 	document.getElementById("buttonstartbutton").disabled = false;
                 	document.getElementById("buttonstartbutton").style.background="#8a4949";
-                	changeClass(document.getElementById("buttonstartbutton"), "div#startbutton input:hover", "div#startbutton_enabled input:hover");
+                	document.getElementById("buttonstartbutton").onmouseover = function() {
+                	    	this.style.backgroundColor = "#aa5e5f";
+                		}
                 	}
             }
 
