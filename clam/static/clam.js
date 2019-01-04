@@ -143,6 +143,9 @@ function deleteinputfile(filename) {   //eslint-disable-line no-unused-vars
     		document.getElementById("buttonstartbutton").onmouseover = function() {
     	    	this.style.backgroundColor = "grey";
     		}
+    		document.getElementById("buttonstartbutton").mouseout = function() {
+        		this.style.backgroundColor = "#686868";
+        	}
     	}
 }
 
@@ -283,6 +286,10 @@ function processuploadresponse(response, paramdiv) {
                 	    	this.style.backgroundColor = "#aa5e5f";
                 		}
                 	}
+                	document.getElementById("buttonstartbutton").mouseout = function() {
+                		this.style.backgroundColor = "#8a4949";
+                	}
+        	}
             }
 
         }
