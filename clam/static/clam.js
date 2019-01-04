@@ -23,12 +23,6 @@ function oauthheader(req) {
   }
 }
 
-function injectStyles(rule) {
-	  var div = $("<div />", {
-	    html: '&shy;<style>' + rule + '</style>'
-	  }).appendTo("body");    
-	}
-
 function changeClass(object,oldClass,newClass)
 {
     // remove:
@@ -157,8 +151,7 @@ function deleteinputfile(filename) {   //eslint-disable-line no-unused-vars
     	{
     		document.getElementById("buttonstartbutton").disabled = true;
     		document.getElementById("buttonstartbutton").style.background="#686868";
-    		//injectStyles('div#startbutton input:hover { background: grey; }');
-    		changeClass(document.getElementById("buttonstartbutton"), "div#startbutton_enabled", "div#startbutton")
+    		//changeClass(document.getElementById("buttonstartbutton"), "div#startbutton_enabled", "div#startbutton")
     	}
 }
 
@@ -295,8 +288,7 @@ function processuploadresponse(response, paramdiv) {
                 	{
                 	document.getElementById("buttonstartbutton").disabled = false;
                 	document.getElementById("buttonstartbutton").style.background="#8a4949";
-                	//injectStyles('div#startbutton input:hover { background: #aa5e5f; }');
-                	changeClass(document.getElementById("buttonstartbutton"), "div#startbutton", "div#startbutton_enabled")
+                	//changeClass(document.getElementById("buttonstartbutton"), "div#startbutton", "div#startbutton_enabled")
                 	}
             }
 

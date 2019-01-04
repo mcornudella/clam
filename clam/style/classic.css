@@ -265,7 +265,7 @@ div#startbutton input {
 }
 
 div#startbutton input:hover {
-	background: grey; /*#aa5e5f*/
+	background: #aa5e5f
 }
 
 div#startbutton_enabled input:hover {
