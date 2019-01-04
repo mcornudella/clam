@@ -32,6 +32,22 @@ function getinputtemplate(id) {
     return null;
 }
 
+function MouseOverEnabled(elem) {
+	elem.style.color = "#aa5e5f";
+}
+
+function MouseOutEnabled(elem) {
+	elem.style.color = "#8a4949";
+}
+
+function MouseOverDisabled(elem) {
+	elem.style.color = "grey";
+}
+
+function MouseOutDisabled(elem) {
+	elem.style.color = "#686868";
+}
+
 function validateuploadfilename(filename, inputtemplate_id) {
     var inputtemplate = getinputtemplate(inputtemplate_id);
     if (inputtemplate === null) {
@@ -140,12 +156,8 @@ function deleteinputfile(filename) {   //eslint-disable-line no-unused-vars
     	{
     		document.getElementById("buttonstartbutton").disabled = true;
     		document.getElementById("buttonstartbutton").style.background="#686868";
-    		document.getElementById("buttonstartbutton").onmouseover = function() {
-    	    	this.style.backgroundColor = "grey";
-    		}
-    		document.getElementById("buttonstartbutton").mouseout = function() {
-        		this.style.backgroundColor = "#686868";
-        	}
+    		document.getElementById("buttonstartbutton").onmouseover = "MouseOverDisabled(this);"
+    		document.getElementById("buttonstartbutton").onmouseout = "MouseOutDisabled(this);"
     	}
 }
 
@@ -282,12 +294,8 @@ function processuploadresponse(response, paramdiv) {
                 	{
                 	document.getElementById("buttonstartbutton").disabled = false;
                 	document.getElementById("buttonstartbutton").style.background="#8a4949";
-                	document.getElementById("buttonstartbutton").onmouseover = function() {
-                	    	this.style.backgroundColor = "#aa5e5f";
-                		}
-                	document.getElementById("buttonstartbutton").mouseout = function() {
-                		this.style.backgroundColor = "#8a4949";
-                		}
+                	document.getElementById("buttonstartbutton").onmouseover = "MouseOverEnabled(this);"
+                	document.getElementById("buttonstartbutton").onmouseout = "MouseOutEnabled(this);"
                 	}
         	}
 
