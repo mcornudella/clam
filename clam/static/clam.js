@@ -29,6 +29,17 @@ function injectStyles(rule) {
 	  }).appendTo("body");    
 	}
 
+function changeClass(object,oldClass,newClass)
+{
+    // remove:
+    //object.className = object.className.replace( /(?:^|\s)oldClass(?!\S)/g , '' );
+    // replace:
+    var regExp = new RegExp('(?:^|\\s)' + oldClass + '(?!\\S)', 'g');
+    object.className = object.className.replace( regExp , newClass );
+    // add
+    //object.className += " "+newClass;
+}
+
 function getinputtemplate(id) {
     for (var i = 0; i < inputtemplates.length; i++) {
         if (inputtemplates[i].id === id) {
@@ -146,7 +157,8 @@ function deleteinputfile(filename) {   //eslint-disable-line no-unused-vars
     	{
     		document.getElementById("buttonstartbutton").disabled = true;
     		document.getElementById("buttonstartbutton").style.background="#686868";
-    		injectStyles('div#startbutton input:hover { background: grey; }');
+    		//injectStyles('div#startbutton input:hover { background: grey; }');
+    		changeClass(document.getElementById("buttonstartbutton"), "#startbutton_enabled", "#startbutton")
     	}
 }
 
@@ -283,7 +295,8 @@ function processuploadresponse(response, paramdiv) {
                 	{
                 	document.getElementById("buttonstartbutton").disabled = false;
                 	document.getElementById("buttonstartbutton").style.background="#8a4949";
-                	injectStyles('div#startbutton input:hover { background: #aa5e5f; }');
+                	//injectStyles('div#startbutton input:hover { background: #aa5e5f; }');
+                	changeClass(document.getElementById("buttonstartbutton"), "#startbutton", "#startbutton_enabled")
                 	}
             }
 
