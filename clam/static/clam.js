@@ -290,7 +290,6 @@ function processuploadresponse(response, paramdiv) {
                 		}
                 	}
         	}
-            }
 
         }
 
