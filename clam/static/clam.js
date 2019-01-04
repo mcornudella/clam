@@ -136,7 +136,11 @@ function deleteinputfile(filename) {   //eslint-disable-line no-unused-vars
         url: baseurl + '/' + project + "/input/" + filename,
         dataType: "xml"
     });
-    if(tableinputfiles.fnGetData().length == 0) document.getElementById("buttonstartbutton").disabled = true;
+    if(tableinputfiles.fnGetData().length == 0) 
+    	{
+    		document.getElementById("buttonstartbutton").disabled = true;
+    		document.getElementById("buttonstartbutton").style.background="#434343";
+    	}
 }
 
 function setinputsource(tempelement) { //eslint-disable-line no-unused-vars
@@ -271,8 +275,7 @@ function processuploadresponse(response, paramdiv) {
                 if(tableinputfiles.fnGetData().length != 0) 
                 	{
                 	document.getElementById("buttonstartbutton").disabled = false;
-                	document.getElementById("buttonstartbutton").style.background="green";
-                	document.getElementById("startbutton").style.background="green";
+                	document.getElementById("buttonstartbutton").style.background="#8a4949";
                 	}
             }
 
