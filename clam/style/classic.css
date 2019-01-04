@@ -255,6 +255,10 @@ input#indexbutton:hover, input#abortbutton:hover, input#restartbutton:hover, inp
 	background: #aa5e5f;
 }
 
+.buttonstartbutton_disabled:hover {
+	background: grey;
+}
+
 div#startbutton input {
 	background: #686868; /*#8a4949;*/
 	padding: 14px;
