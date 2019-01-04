@@ -213,7 +213,7 @@ a:visited {
 }
 
 input.uploadbutton, input.submitaction {
-	background: #686868;/*#8a4949;*/
+	background: #8a4949; /*#686868;*/
 	padding: 7px;
 	color: white;
 	font-weight: normal;
@@ -222,7 +222,7 @@ input.uploadbutton, input.submitaction {
 }
 
 #container .qq-upload-button {
-    background: #686868;/*#8a4949;*/
+    background: #8a4949; /*#686868;*/
     border-radius: 5px;
 }
 #container .qq-upload-button:hover {
@@ -286,7 +286,7 @@ input.buttonstartbutton.enabled {
 }
 
 div#startbutton input {
-	background: #8a4949;
+	background: #686868; /*#8a4949;*/
 	padding: 14px;
 	color: white;
 	font-weight: bold;

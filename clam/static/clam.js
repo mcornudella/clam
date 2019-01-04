@@ -139,7 +139,7 @@ function deleteinputfile(filename) {   //eslint-disable-line no-unused-vars
     if(tableinputfiles.fnGetData().length == 0) 
     	{
     		document.getElementById("buttonstartbutton").disabled = true;
-    		document.getElementById("buttonstartbutton").style.background="#434343";
+    		document.getElementById("buttonstartbutton").style.background="#686868";
     	}
 }
 
