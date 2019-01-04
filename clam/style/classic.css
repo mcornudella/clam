@@ -250,36 +250,6 @@ input#indexbutton:hover, input#abortbutton:hover, input#restartbutton:hover, inp
 	background: #ee8282;	
 }
 
-input.uploadbutton:hover {
-	background: #aa5e5f;
-    border-radius: 5px;
-}
-
-input.buttonstartbutton.disabled {
-	background: #837e75;
-	padding: 14px;
-	color: white;
-	font-weight: bold;
-	font-size: 26px;
-	width: 180px;
-	border: none;
-	cursor: pointer;
-    border-radius: 5px;
-    margin: 1px;
-}
-
-input.buttonstartbutton.enabled {
-	background: #8a4949;
-	padding: 14px;
-	color: white;
-	font-weight: bold;
-	font-size: 26px;
-	width: 180px;
-	border: none;
-	cursor: pointer;
-    border-radius: 5px;
-    margin: 1px;
-}
 
 .buttonstartbutton:hover {
 	background: #aa5e5f;
