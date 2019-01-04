@@ -264,13 +264,13 @@ div#startbutton input {
     border-radius: 5px;
 }
 
-div#startbutton input:hover {
+/*div#startbutton input:hover {
 	background: #aa5e5f
 }
 
 div#startbutton_enabled input:hover {
 	background: #aa5e5f
-}
+}*/
 
 div#startbutton_enabled input {
 	background: #8a4949;
