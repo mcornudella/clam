@@ -255,7 +255,7 @@ input.uploadbutton:hover {
     border-radius: 5px;
 }
 
-#button .buttonstartbutton.disabled {
+input.buttonstartbutton.disabled {
 	background: #837e75;
 	padding: 14px;
 	color: white;
@@ -268,7 +268,7 @@ input.uploadbutton:hover {
     margin: 1px;
 }
 
-#button .buttonstartbutton.enabled {
+input.buttonstartbutton.enabled {
 	background: #8a4949;
 	padding: 14px;
 	color: white;
