@@ -146,7 +146,7 @@ function deleteinputfile(filename) {   //eslint-disable-line no-unused-vars
     	{
     		document.getElementById("buttonstartbutton").disabled = true;
     		document.getElementById("buttonstartbutton").style.background="#686868";
-    		document.getElementById("buttonstartbutton").injectStyles('a:hover { color: grey; }');
+    		injectStyles('input:hover { color: grey; }');
     	}
 }
 
@@ -283,7 +283,7 @@ function processuploadresponse(response, paramdiv) {
                 	{
                 	document.getElementById("buttonstartbutton").disabled = false;
                 	document.getElementById("buttonstartbutton").style.background="#8a4949";
-                	document.getElementById("buttonstartbutton").injectStyles('a:hover { color: #aa5e5f; }');
+                	injectStyles('input:hover { color: #aa5e5f; }');
                 	}
             }
 

@@ -265,7 +265,7 @@ div#startbutton input {
 }
 
 div#startbutton input:hover {
-	background: #aa5e5f;
+	background: grey; /*#aa5e5f*/
 }
 div#actionindex p {
     margin-left: 20px;
