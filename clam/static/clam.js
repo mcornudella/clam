@@ -285,9 +285,9 @@ function processuploadresponse(response, paramdiv) {
                 	document.getElementById("buttonstartbutton").onmouseover = function() {
                 	    	this.style.backgroundColor = "#aa5e5f";
                 		}
-                	}
                 	document.getElementById("buttonstartbutton").mouseout = function() {
                 		this.style.backgroundColor = "#8a4949";
+                		}
                 	}
         	}
             }
