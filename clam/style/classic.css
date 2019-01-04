@@ -264,6 +264,10 @@ div#startbutton input {
     border-radius: 5px;
 }
 
+div#startbutton input:hover {
+	background: grey; /*#aa5e5f*/
+}
+
 div#startbutton_enabled input:hover {
 	background: #aa5e5f
 }
@@ -277,9 +281,6 @@ div#startbutton_enabled input {
     border-radius: 5px;
 }
 
-div#startbutton input:hover {
-	background: grey; /*#aa5e5f*/
-}
 
 div#actionindex p {
     margin-left: 20px;
