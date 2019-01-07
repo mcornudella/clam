@@ -164,18 +164,15 @@ input.uploadbutton {
     color: white;
 }
 
-@media screen and (min-width: 1060px) {
-#header-menu ul.menu li { float: left; }
-#header-menu ul.menu a {
-    padding-left: 54px;
-    padding-right: 53px;
-}
-}
 
 #tabs {
 	background: white;/*#e0e0e0; /*#E6DCCA;*/
 }
 
+div#content div.options ul li
+{
+  margin-right:10px;
+}
 
 #tabs li.active {
 	background: #006DCC; /*#bcbcbc; /*#cfbf9d;*/
