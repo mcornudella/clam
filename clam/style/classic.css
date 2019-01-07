@@ -193,7 +193,7 @@ input.uploadbutton {
 	border-bottom-right-radius: 12px;	
 	background: white; /*#bfbfbf;*/
 	color:  gray; /*#006DCC; /*white;*/	
-	border: #006DCC solid 2px; /* #c9c9c9 solid 1px; /*#bfbfbf solid 1px;*/
+	border: #c9c9c9 solid 1px; /*#bfbfbf solid 1px;*/
     /*opacity: 0.6;*/
 }
 
