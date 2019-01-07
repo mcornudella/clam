@@ -197,7 +197,7 @@ input.uploadbutton {
     /*opacity: 0.6;*/
 }
 
-#tabs li.restart {
+#tabs li.restart, #tabs li.restart a {
 	font-size: 90%;
 	padding: 7px;
 	margin: 10px 0;
