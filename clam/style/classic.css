@@ -183,6 +183,7 @@ input.uploadbutton {
 
 #tabs li.disabled {
 	font-size: 90%;
+	text-decoration: none;
 	/*border-top-left-radius: 12px;
 	border-top-right-radius: 12px;
 	border-bottom-left-radius: 12px;
@@ -195,6 +196,7 @@ input.uploadbutton {
 
 #tabs li.restart {
 	font-size: 90%;
+	text-decoration: none;
 	border-top-left-radius: 12px;
 	border-top-right-radius: 12px;
 	border-bottom-left-radius: 12px;
@@ -207,11 +209,8 @@ input.uploadbutton {
 
 #tabs li {
 	font-size: 90%;
-	border-top-left-radius: 12px;
-	border-top-right-radius: 12px;	
-	border-bottom-left-radius: 12px;
-	border-bottom-right-radius: 12px;
-	border: c9c9c9 solid 1px; /*#cbc3b1 solid 1px;*/
+	padding: 2px;
+	 /*#cbc3b1 solid 1px;*/
 	background: white; /*#cccccc; /*#cbc3b1;*/
 	color: #006DCC; /*white;*/
 	padding-left: 5px;
@@ -222,20 +221,10 @@ input.uploadbutton {
 #tabs a, #tabs a:visited {
 	color: #006DCC; /*white;*/
 	/*text-decoration: none;*/
-	border-top-left-radius: 12px;
-	border-top-right-radius: 12px;	
-	border-bottom-left-radius: 12px;
-	border-bottom-right-radius: 12px;
-	border: c9c9c9 solid 1px;
 }
 #tabs a:hover {
 	color: #006DCC; /*#fffeb9;*/
 	/*text-decoration: none;*/
-	border-top-left-radius: 12px;
-	border-top-right-radius: 12px;	
-	border-bottom-left-radius: 12px;
-	border-bottom-right-radius: 12px;
-	border: c9c9c9 solid 1px;
 }
 #status .error {
 	margin: 2px;
