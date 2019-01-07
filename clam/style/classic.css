@@ -172,6 +172,7 @@ input.uploadbutton {
 #tabs li.active {
 	background: #006DCC; /*#bcbcbc; /*#cfbf9d;*/
 	color: white;
+	padding: 7px;
 	text-decoration: underline;
 	border-top-left-radius: 12px;
 	border-top-right-radius: 12px;
@@ -184,11 +185,12 @@ input.uploadbutton {
 #tabs li.disabled {
 	font-size: 90%;
 	text-decoration: none;
-	/*border-top-left-radius: 12px;
+	padding: 7px;
+	border-top-left-radius: 12px;
 	border-top-right-radius: 12px;
 	border-bottom-left-radius: 12px;
 	border-bottom-right-radius: 12px;	
-	background: white; /*#bfbfbf;*/
+	background: white; /*#bfbfbf;
 	color:  gray; /*#006DCC; /*white;*/	
 	border: #c9c9c9 solid 1px; /*#bfbfbf solid 1px;*/
     /*opacity: 0.6;*/
@@ -197,6 +199,7 @@ input.uploadbutton {
 #tabs li.restart {
 	font-size: 90%;
 	text-decoration: none;
+	padding: 7px;
 	border-top-left-radius: 12px;
 	border-top-right-radius: 12px;
 	border-bottom-left-radius: 12px;
@@ -209,7 +212,8 @@ input.uploadbutton {
 
 #tabs li {
 	font-size: 90%;
-	padding: 2px;
+	padding: 7px;
+	margin: 10px 0;
 	 /*#cbc3b1 solid 1px;*/
 	background: white; /*#cccccc; /*#cbc3b1;*/
 	color: #006DCC; /*white;*/
