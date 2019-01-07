@@ -275,7 +275,7 @@ input.uploadbutton, input.submitaction {
 
 
 input#indexbutton, input#abortbutton, input#restartbutton, input#deletebutton, input#startprojectbutton, button.quickdelete {
-	background: #d47072;
+	background: #f0ad4e; /*#d47072;*/
 	padding: 2px;
 	color: white;
 	font-weight: normal;
@@ -287,12 +287,12 @@ input#indexbutton, input#abortbutton, input#restartbutton, input#deletebutton, i
     margin: 1px;
 }
 input#indexbutton:hover, input#abortbutton:hover, input#restartbutton:hover, input#deletebutton:hover, input#startprojectbutton:hover, button.quickdelete:hover {
-	background: #ee8282;	
+	background: #eea236; /*#ee8282;	*/
 }
 
 
 .buttonstartbutton:hover {
-	background: #aa5e5f;
+	background: #eea236; /*#aa5e5f;*/
 }
 
 .buttonstartbutton_disabled:hover {

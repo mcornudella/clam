@@ -281,12 +281,12 @@ function processuploadresponse(response, paramdiv) {
                 if(tableinputfiles.fnGetData().length != 0) 
                 	{
                 	document.getElementById("buttonstartbutton").disabled = false;
-                	document.getElementById("buttonstartbutton").style.background="#8a4949";
+                	document.getElementById("buttonstartbutton").style.background="#f0ad4e";
                 	document.getElementById("buttonstartbutton").onmouseover = function() {
-                	    	this.style.backgroundColor = "#aa5e5f";
+                	    	this.style.backgroundColor = "#eea236";
                 		}
                 	document.getElementById("buttonstartbutton").onmouseout = function() {
-                		this.style.backgroundColor = "#8a4949";
+                		this.style.backgroundColor = "#f0ad4e";
                 		}
                 	}
         	}
