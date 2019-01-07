@@ -169,16 +169,12 @@ input.uploadbutton {
 	background: white;/*#e0e0e0; /*#E6DCCA;*/
 }
 
-div#content div.options ul li
-{
-  margin-right:10px;
-}
-
 #tabs li.active {
 	background: #006DCC; /*#bcbcbc; /*#cfbf9d;*/
 	color: white;
 	padding: 7px;
-	margin: 10px 0;
+	/*margin: 10px 0;*/
+	margin-right:10px;
 	text-decoration: underline;
 	border-top-left-radius: 12px;
 	border-top-right-radius: 12px;
@@ -191,7 +187,8 @@ div#content div.options ul li
 #tabs li.disabled {
 	font-size: 90%;
 	padding: 7px;
-	margin: 10px 0;
+	/*margin: 10px 0;*/
+	margin-right:10px;
 	border-top-left-radius: 12px;
 	border-top-right-radius: 12px;
 	border-bottom-left-radius: 12px;
