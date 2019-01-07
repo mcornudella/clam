@@ -99,7 +99,7 @@ table#projects td {
 }
 
 body table.files td:hover, table.files th:hover, table#projects td:hover {
-    background: #eee;
+    /*background: #eee;*/
 }
 
 table.files td {
@@ -246,7 +246,7 @@ input.uploadbutton {
 	width: 70%; 
 }
 a {
-	color: #574b32;
+	color: /*#574b32;*/
 }
 a:visited {
 	color: #6d6450;
