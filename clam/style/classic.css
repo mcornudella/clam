@@ -90,7 +90,7 @@ h3 {
     width: 95%;
 }
 table.files, table#projects {
-    border: #837e75;/*#ca9c4d;*/
+    border: black; /*#837e75;/*#ca9c4d;*/
 }
 
 table#projects td {
