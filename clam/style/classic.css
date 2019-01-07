@@ -174,12 +174,12 @@ input.uploadbutton {
 	color: white;
 	padding: 7px;
 	/*margin: 10px 0;*/
-	margin-right:10px;
-	text-decoration: underline;
-	border-top-left-radius: 12px;
-	border-top-right-radius: 12px;
-	border-bottom-left-radius: 12px;
-	border-bottom-right-radius: 12px;	
+	margin-right:8px;
+	/*text-decoration: underline;*/
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;	
 	border: #006DCC solid 2px; /*#cfbf9d solid 1px;*/
 	font-size: 100%;
 }
@@ -188,14 +188,14 @@ input.uploadbutton {
 	font-size: 90%;
 	padding: 7px;
 	/*margin: 10px 0;*/
-	margin-right:10px;
-	border-top-left-radius: 12px;
-	border-top-right-radius: 12px;
-	border-bottom-left-radius: 12px;
-	border-bottom-right-radius: 12px;	
+	margin-right:8px;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;	
 	background: white; /*#bfbfbf;*/
 	color:  gray; /*#006DCC; /*white;*/	
-	border: #c9c9c9 solid 1px; /*#bfbfbf solid 1px;*/
+	border: #c9c9c9 solid 2px; /*#bfbfbf solid 1px;*/
     /*opacity: 0.6;*/
 }
 
