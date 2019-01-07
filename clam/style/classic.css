@@ -198,7 +198,7 @@ input.uploadbutton {
 
 #tabs li.restart {
 	font-size: 90%;
-	text-decoration: none;
+	
 	padding: 7px;
 	border-top-left-radius: 12px;
 	border-top-right-radius: 12px;
@@ -206,7 +206,7 @@ input.uploadbutton {
 	border-bottom-right-radius: 12px;	
 	background: white; /*#bfbfbf;*/
 	color:  #006DCC; /*white;*/	
-	border: #c9c9c9 solid 1px; /*#bfbfbf solid 1px;*/
+	border: #006DCC; solid 2px; /*#bfbfbf solid 1px;*/
     /*opacity: 0.6;*/
 }
 
