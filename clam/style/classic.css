@@ -173,6 +173,7 @@ input.uploadbutton {
 	background: #006DCC; /*#bcbcbc; /*#cfbf9d;*/
 	color: white;
 	padding: 7px;
+	margin: 10px 0;
 	text-decoration: underline;
 	border-top-left-radius: 12px;
 	border-top-right-radius: 12px;
@@ -186,6 +187,7 @@ input.uploadbutton {
 	font-size: 90%;
 	text-decoration: none;
 	padding: 7px;
+	margin: 10px 0;
 	border-top-left-radius: 12px;
 	border-top-right-radius: 12px;
 	border-bottom-left-radius: 12px;
@@ -198,8 +200,8 @@ input.uploadbutton {
 
 #tabs li.restart {
 	font-size: 90%;
-	
 	padding: 7px;
+	margin: 10px 0;
 	border-top-left-radius: 12px;
 	border-top-right-radius: 12px;
 	border-bottom-left-radius: 12px;
