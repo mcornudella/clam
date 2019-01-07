@@ -226,7 +226,7 @@ input.uploadbutton {
 	cursor: pointer;
 }
 
-#a a.restart :visited {
+#a restart {
 	font-size: 90%;
 	padding: 7px;
 	margin: 10px 0;
