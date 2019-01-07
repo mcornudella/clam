@@ -166,11 +166,6 @@ input.uploadbutton {
 
 #tabs {
 	background: white;/*#e0e0e0; /*#E6DCCA;*/
-	border: #c9c9c9 solid 1px; /*#cfbf9d solid 1px;*/
-	border-top-left-radius: 12px;
-	border-top-right-radius: 12px;
-	border-bottom-left-radius: 12px;
-	border-bottom-right-radius: 12px;	
 }
 
 
@@ -178,16 +173,16 @@ input.uploadbutton {
 	background: #006DCC; /*#bcbcbc; /*#cfbf9d;*/
 	color: white;
 	text-decoration: underline;
-	/*border: #c9c9c9 solid 1px; /*#cfbf9d solid 1px;*/
+	border: #c9c9c9 solid 1px; /*#cfbf9d solid 1px;*/
 	font-size: 100%;
 }
 
 #tabs li.disabled {
 	font-size: 90%;
-	/*border-top-left-radius: 12px;
+	border-top-left-radius: 12px;
 	border-top-right-radius: 12px;
 	border-bottom-left-radius: 12px;
-	border-bottom-right-radius: 12px;	*/
+	border-bottom-right-radius: 12px;	
 	background: white; /*#bfbfbf;*/
 	color:  #006DCC; /*white;*/	
 	border: #c9c9c9 solid 1px; /*#bfbfbf solid 1px;*/
@@ -196,7 +191,7 @@ input.uploadbutton {
 
 #tabs li {
 	font-size: 90%;
-	/*border-top-left-radius: 12px;
+	border-top-left-radius: 12px;
 	border-top-right-radius: 12px;	
 	border-bottom-left-radius: 12px;
 	border-bottom-right-radius: 12px;
@@ -211,6 +206,11 @@ input.uploadbutton {
 #tabs a, #tabs a:visited {
 	color: #006DCC; /*white;*/
 	text-decoration: none;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;	
+	border-bottom-left-radius: 12px;
+	border-bottom-right-radius: 12px;
+	border: c9c9c9 solid 1px;
 }
 #tabs a:hover {
 	color: #006DCC; /*#fffeb9;*/
