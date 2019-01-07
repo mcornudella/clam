@@ -230,15 +230,9 @@ input.uploadbutton {
 	font-size: 90%;
 	padding: 7px;
 	margin: 10px 0;
-	border-top-left-radius: 6px;
-	border-top-right-radius: 6px;
-	border-bottom-left-radius: 6px;
-	border-bottom-right-radius: 6px;	
+	text-decoration: none;
 	background: white; /*#bfbfbf;*/
 	color:  #006DCC; /*white;*/	
-	border: #006DCC; solid 2px;
-	color: #006DCC; /*white;*/
-	/*text-decoration: none;*/
 }
 
 #tabs a, #tabs a:visited {
