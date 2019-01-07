@@ -226,14 +226,7 @@ input.uploadbutton {
 	cursor: pointer;
 }
 
-##tabs a.restart {
-	font-size: 90%;
-	padding: 7px;
-	margin: 10px 0;
-	text-decoration: none;
-	background: white; /*#bfbfbf;*/
-	color:  #006DCC; /*white;*/	
-}
+
 
 #tabs a, #tabs a:visited {
 	font-size: 90%;
