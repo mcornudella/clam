@@ -225,6 +225,16 @@ input.uploadbutton {
 	cursor: pointer;
 }
 #tabs a, #tabs a:visited {
+	font-size: 90%;
+	padding: 7px;
+	margin: 10px 0;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+	border-bottom-left-radius: 12px;
+	border-bottom-right-radius: 12px;	
+	background: white; /*#bfbfbf;*/
+	color:  #006DCC; /*white;*/	
+	border: #006DCC; solid 2px;
 	color: #006DCC; /*white;*/
 	/*text-decoration: none;*/
 }
