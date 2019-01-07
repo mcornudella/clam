@@ -246,10 +246,10 @@ input.uploadbutton {
 	width: 70%; 
 }
 a {
-	color: /*#574b32;*/
+	color: #377AB5;/*#574b32;*/
 }
 a:visited {
-	color: #0062B7;/*#6d6450;*/
+	color: #306B9E;/*#6d6450;*/
 }
 
 input.uploadbutton, input.submitaction {
