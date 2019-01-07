@@ -441,10 +441,10 @@
         <table id="inputfiles" class="files">
             <thead>
                 <tr>
-                    <th style="width: 30%">Input File</th>
-                    <th style="width: 30%">Template</th>
-                    <th style="width: 30%">Format</th>
-                    <th style="width: 10%; background-color: #4CAF50;">Actions</th>
+                    <th style="width: 30%; background-color: white;">Input File</th>
+                    <th style="width: 30%; background-color: white;">Template</th>
+                    <th style="width: 30%; background-color: white;">Format</th>
+                    <th style="width: 10%; background-color: white;">Actions</th>
                 </tr>
             </thead>
             <tbody>
@@ -484,11 +484,11 @@
         <table id="outputfiles" class="files">
             <thead>
                 <tr>
-                    <th style="width: 35%">Output File</th>
-                    <th style="width: 25%">Template</th>
+                    <th style="width: 35%; background-color: white;">Output File</th>
+                    <th style="width: 25%; background-color: white;">Template</th>
                     <!-- <th style="width: 20%">Language</th> -->
-                    <th style="width: 20%">Format</th>  
-                    <th style="width: 25%">Viewers</th>
+                    <th style="width: 20%; background-color: white;">Format</th>  
+                    <th style="width: 25%; background-color: white;">Viewers</th>
                 </tr>
             </thead>
             <tbody>
