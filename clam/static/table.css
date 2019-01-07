@@ -157,7 +157,7 @@ table.display tfoot th {
 }
 
 table.display tr.heading2 td {
-	border-bottom: 1px solid #aaa;
+	/*border-bottom: 1px solid #aaa;*/
 }
 
 table.display td {
