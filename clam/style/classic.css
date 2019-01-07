@@ -1,6 +1,7 @@
 body {
 	background: url(static/back.png);
-    font-family: sans-serif;
+    /*font-family: sans-serif;*/
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 12px;
 }
 #gradient {
