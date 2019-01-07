@@ -193,6 +193,18 @@ input.uploadbutton {
     /*opacity: 0.6;*/
 }
 
+#tabs li.restart {
+	font-size: 90%;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+	border-bottom-left-radius: 12px;
+	border-bottom-right-radius: 12px;	
+	background: white; /*#bfbfbf;*/
+	color:  #006DCC; /*white;*/	
+	border: #c9c9c9 solid 1px; /*#bfbfbf solid 1px;*/
+    /*opacity: 0.6;*/
+}
+
 #tabs li {
 	font-size: 90%;
 	border-top-left-radius: 12px;
