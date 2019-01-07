@@ -191,7 +191,7 @@ table.display td.center {
 
 
 tr.odd {
-	background-color: #e2e2e2;
+	background-color: white; /*#e2e2e2;*/
 }
 
 tr.even {
@@ -207,8 +207,8 @@ tr.even {
  */
 .top, .bottom {
 	padding: 15px;
-	background-color: #F5F5F5;
-	border: 1px solid #CCCCCC;
+	background-color: white /*#F5F5F5;*/
+	/*border: 1px solid #CCCCCC;*/
 }
 
 .top .dataTables_info {
@@ -286,27 +286,27 @@ table.display tr.odd.row_selected td {
  */
 /* For the standard odd/even */
 tr.odd td.sorting_1 {
-	background-color: #E1D1B4; /*#ceb383;*/
+	background-color: white; /*#E1D1B4; /*#ceb383;*/
 }
 
 tr.odd td.sorting_2 {
-	background-color: #DADCFF;
+	background-color: white; /*#DADCFF;*/
 }
 
 tr.odd td.sorting_3 {
-	background-color: #E0E2FF;
+	background-color: white; /*#E0E2FF;*/
 }
 
 tr.even td.sorting_1 {
-	background-color: #F2E2C4;
+	background-color: white; /*#F2E2C4;*/
 }
 
 tr.even td.sorting_2 {
-	background-color: #F2F3FF;
+	background-color: white; /*#F2F3FF;*/
 }
 
 tr.even td.sorting_3 {
-	background-color: #F9F9FF;
+	background-color: white; /*#F9F9FF;*/
 }
 
 
