@@ -22,27 +22,27 @@
     			<ol>
                     <xsl:choose>
                     <xsl:when test="/clam/@oauth_access_token = ''">
-                      <li class = "restart"><a href="{/clam/@baseurl}/">1. Restart</a></li>
+                      <li class = "restart"><a href="{/clam/@baseurl}/"> Restart</a></li>
                     </xsl:when>
                     <xsl:otherwise>
-                      <li class = "restart"><a href="{/clam/@baseurl}/?oauth_access_token={/clam/@oauth_access_token}">1. Restart</a></li>
+                      <li class = "restart"><a href="{/clam/@baseurl}/?oauth_access_token={/clam/@oauth_access_token}"> Restart</a></li>
                     </xsl:otherwise>
                     </xsl:choose>
 				    <xsl:choose>
 				        <xsl:when test="status/@code = 0">
-				         <li class="active">2. Input &amp; Parameters</li>
-				         <li class="disabled">3. Processing</li>
-				         <li class="disabled">4. Output &amp; Visualisation</li>
+				         <li class="active"> Input &amp; Parameters</li>
+				         <li class="disabled"> Processing</li>
+				         <li class="disabled"> Output &amp; Visualisation</li>
 				        </xsl:when>
 				        <xsl:when test="status/@code = 1">
-				         <li class="disabled">2. Input &amp; Parameters</li>
-				         <li class="active">3. Processing</li>
-				         <li class="disabled">4. Output &amp; Visualisation</li>
+				         <li class="disabled"> Input &amp; Parameters</li>
+				         <li class="active"> Processing</li>
+				         <li class="disabled"> Output &amp; Visualisation</li>
 				        </xsl:when>
 				        <xsl:when test="status/@code = 2">
-				         <li class="disabled">2. Input &amp; Parameters</li>
-				         <li class="disabled">3. Processing</li>
-				         <li class="active">4. Output &amp; Visualisation</li>
+				         <li class="disabled"> Input &amp; Parameters</li>
+				         <li class="disabled"> Processing</li>
+				         <li class="active"> Output &amp; Visualisation</li>
 				        </xsl:when>
 				    </xsl:choose>
 
@@ -611,15 +611,15 @@
 			<ol>
                 <xsl:choose>
                 <xsl:when test="/clam/@oauth_access_token = ''">
-                  <li class="restart"><a href="{/clam/@baseurl}/">1. Restart</a></li>
+                  <li class="restart"><a href="{/clam/@baseurl}/"> Restart</a></li>
                 </xsl:when>
                 <xsl:otherwise>
-                  <li class="restart"><a href="{/clam/@baseurl}/?oauth_access_token={/clam/@oauth_access_token}">1. Restart</a></li>
+                  <li class="restart"><a href="{/clam/@baseurl}/?oauth_access_token={/clam/@oauth_access_token}"> Restart</a></li>
                 </xsl:otherwise>
                 </xsl:choose>
-				<li class="disabled">2. Input &amp; Parameters</li>
-				<li class="disabled">3. Processing</li>
-				<li class="disabled">4. Output &amp; Visualisation</li>
+				<li class="disabled"> Input &amp; Parameters</li>
+				<li class="disabled"> Processing</li>
+				<li class="disabled"> Output &amp; Visualisation</li>
 			</ol>
 			<script>createrandomproject();</script>
 		</div>
