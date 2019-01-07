@@ -22,7 +22,7 @@
     			<ol>
                     <xsl:choose>
                     <xsl:when test="/clam/@oauth_access_token = ''">
-                      <li><a href="{/clam/@baseurl}/">1. Restart</a></li>
+                      <li class = "restart"><a href="{/clam/@baseurl}/">1. Restart</a></li>
                     </xsl:when>
                     <xsl:otherwise>
                       <li class = "restart"><a href="{/clam/@baseurl}/?oauth_access_token={/clam/@oauth_access_token}">1. Restart</a></li>
@@ -611,10 +611,10 @@
 			<ol>
                 <xsl:choose>
                 <xsl:when test="/clam/@oauth_access_token = ''">
-                  <li class="active"><a href="{/clam/@baseurl}/">1. Restart</a></li>
+                  <li class="restart"><a href="{/clam/@baseurl}/">1. Restart</a></li>
                 </xsl:when>
                 <xsl:otherwise>
-                  <li class="active"><a href="{/clam/@baseurl}/?oauth_access_token={/clam/@oauth_access_token}">1. Restart</a></li>
+                  <li class="restart"><a href="{/clam/@baseurl}/?oauth_access_token={/clam/@oauth_access_token}">1. Restart</a></li>
                 </xsl:otherwise>
                 </xsl:choose>
 				<li class="disabled">2. Input &amp; Parameters</li>
