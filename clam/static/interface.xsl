@@ -13,7 +13,7 @@
     <div id="gradient"></div>
     <div id="header"><h1><xsl:value-of select="@name"/></h1><h2><xsl:value-of select="description"/></h2></div>
     <!-- <div id="header"><h1><xsl:value-of select="@name"/></h1><xsl:if test="@description"><h2><xsl:value-of select="@description"/></h2></xsl:if></div>  -->
-    <div id="covershadow"></div>
+    <!-- <div id="covershadow"></div>  -->
     <div id="container">
 
         <xsl:choose>

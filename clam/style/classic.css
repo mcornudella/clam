@@ -61,7 +61,7 @@ h3 {
     border: none;
 }
 
-#covershadow {
+/*#covershadow {
     display: block;
     background-color: #837e75;
     padding: 0px;
@@ -74,7 +74,7 @@ h3 {
     -webkit-box-shadow: 0px 2px 4px #000000;
        -moz-box-shadow: 0px 2px 4px #000000;
             box-shadow: 0px 2px 4px #000000;
-}
+}*/
 
 .box {
     background: #f6f6f6;
