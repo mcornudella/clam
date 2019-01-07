@@ -1,6 +1,7 @@
 body {
     background: #ce5f5f; /*#e6dcca;*/
-    font-family: sans-serif;
+    /*font-family: sans-serif;*/
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 12px;
     margin: 0px;
 }

@@ -441,9 +441,9 @@
         <table id="inputfiles" class="files">
             <thead>
                 <tr>
-                    <th style="width: 30%">Input File</th>
-                    <th style="width: 30%">Template</th>
-                    <th style="width: 30%">Format</th>
+                    <th style="width: 33%">Input File</th>
+                    <th style="width: 33%">Template</th>
+                    <th style="width: 33%; background=white;">Format</th>
                     <th style="width: 10%">Actions</th>
                 </tr>
             </thead>
