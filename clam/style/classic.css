@@ -178,6 +178,9 @@ input.uploadbutton {
 }
 
 #tabs li.disabled {
+	font-size: 90%;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;	
 	background: white; /*#bfbfbf;*/
 	color:  #006DCC; /*white;*/	
 	border: #c9c9c9 solid 1px; /*#bfbfbf solid 1px;*/
