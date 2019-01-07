@@ -195,7 +195,7 @@ input.uploadbutton {
 	border-bottom-right-radius: 6px;	
 	background: white; /*#bfbfbf;*/
 	color:  gray; /*#006DCC; /*white;*/	
-	border: #c9c9c9 solid 2px; /*#bfbfbf solid 1px;*/
+	/*border: #c9c9c9 solid 2px; /*#bfbfbf solid 1px;*/
     /*opacity: 0.6;*/
 }
 
@@ -225,6 +225,22 @@ input.uploadbutton {
 	font-weight: bold;
 	cursor: pointer;
 }
+
+#a a.restart :visited {
+	font-size: 90%;
+	padding: 7px;
+	margin: 10px 0;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;	
+	background: white; /*#bfbfbf;*/
+	color:  #006DCC; /*white;*/	
+	border: #006DCC; solid 2px;
+	color: #006DCC; /*white;*/
+	/*text-decoration: none;*/
+}
+
 #tabs a, #tabs a:visited {
 	font-size: 90%;
 	padding: 7px;
