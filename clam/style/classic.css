@@ -166,6 +166,12 @@ input.uploadbutton {
 
 #tabs {
 	background: white;/*#e0e0e0; /*#E6DCCA;*/
+	margin: 10px 0;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+	border-bottom-left-radius: 12px;
+	border-bottom-right-radius: 12px;	
+	border: #006DCC solid 1px;
 }
 
 
@@ -179,7 +185,7 @@ input.uploadbutton {
 	border-top-right-radius: 12px;
 	border-bottom-left-radius: 12px;
 	border-bottom-right-radius: 12px;	
-	border: #c9c9c9 solid 1px; /*#cfbf9d solid 1px;*/
+	border: #006DCC solid 1px; /*#cfbf9d solid 1px;*/
 	font-size: 100%;
 }
 
