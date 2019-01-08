@@ -693,11 +693,13 @@ function initclam() { //eslint-disable-line no-unused-vars, complexity
                          });
 
    $('#outputfiles').dataTable( {
-                "bJQueryUI": true, //false,
+                "bJQueryUI": false,
+                "searchable": false,
                 "sPaginationType": "full_numbers"
             });
    $('#projects').dataTable( {
                 "bJQueryUI": false,
+                "searchable": false,
                 "sPaginationType": "full_numbers"
             });
 
@@ -777,7 +779,7 @@ function initclam() { //eslint-disable-line no-unused-vars, complexity
                 error: function(response, errortype){ //eslint-disable-line no-unused-vars
                     processuploadresponse(response.responseXML, '#selectparameters');//'#urluploadparameters');
                     $('#urluploadprogress').hide();
-                    $('#urlupload').hide();//$('#urlupload').show();
+                    $('#urlupload').show();
                 }
             });
     });
@@ -851,7 +853,7 @@ function initclam() { //eslint-disable-line no-unused-vars, complexity
             onComplete: function(file, response){ //eslint-disable-line no-unused-vars
                 processuploadresponse(response, '#selectparameters');//"#uploadparameters");
                 $('#uploadprogress').hide();
-                $('#clientupload').hide(); //$('#clientupload').show();
+                //$('#clientupload').show();
             }
         });
    }
