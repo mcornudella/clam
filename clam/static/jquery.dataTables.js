@@ -910,6 +910,7 @@
 				"bFilter": true,
 				"bSort": true,
 				"bInfo": false,//"bInfo": true,
+				"searching": false,
 				"bAutoWidth": true,
 				"bProcessing": false,
 				"bSortClasses": true,
