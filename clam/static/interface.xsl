@@ -215,6 +215,8 @@
                 </xsl:choose>
             </xsl:if>
         </p>
+        
+        <p><img class="logoupf" src="{/clam/@baseurl}/static/logo_upf.png" /></p>
 
 
         <p>Powered by <strong>CLAM</strong> v<xsl:value-of select="/clam/@version" /> - Computational Linguistics Application Mediator<br />by Maarten van Gompel -
