@@ -7,7 +7,7 @@
 <xsl:template match="/clam">
   <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <xsl:call-template name="head" />
-  <body>
+  <body style= "background-color: white">
     <div id="container">
     	<div id="header"><h1><xsl:value-of select="@name"/></h1></div>
 
