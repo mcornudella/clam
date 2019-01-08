@@ -689,6 +689,7 @@ function initclam() { //eslint-disable-line no-unused-vars, complexity
    //Tables for input files and output files
    tableinputfiles = $('#inputfiles').dataTable( {
                                 "bJQueryUI": false,
+                                "searchable": false,
                                 "sPaginationType": "full_numbers"
                          });
 
