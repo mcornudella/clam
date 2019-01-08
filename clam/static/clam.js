@@ -689,21 +689,21 @@ function initclam() { //eslint-disable-line no-unused-vars, complexity
    //Tables for input files and output files
    tableinputfiles = $('#inputfiles').dataTable( {
                                 "bJQueryUI": false,
-                                "paging":   false,
-                                "ordering": false,
+                                "searching": false,
+                                "paging":   false
                                 //"sPaginationType": "full_numbers"
                          });
 
    $('#outputfiles').dataTable( {
                 "bJQueryUI": false,
+                "searching": false,
                 "paging":   false,
-                "ordering": false,
                 //"sPaginationType": "full_numbers"
             });
    $('#projects').dataTable( {
                 "bJQueryUI": false,
+                "searching": false,
                 "paging":   false,
-                "ordering": false,
                 //"sPaginationType": "full_numbers"
             });
 
