@@ -484,11 +484,11 @@
         <table id="outputfiles" class="files">
             <thead>
                 <tr>
-                    <th style="width: 35%; background-color: white;">Output File</th>
-                    <th style="width: 25%; background-color: white;">Template</th>
+                    <th style="width: 80%; background-color: white;">Output File</th>
+                    <!-- <th style="width: 25%; background-color: white;">Template</th> -->
                     <!-- <th style="width: 20%">Language</th> -->
-                    <th style="width: 20%; background-color: white;">Format</th>  
-                    <th style="width: 25%; background-color: white;">Viewers</th>
+                    <!-- <th style="width: 20%; background-color: white;">Format</th>  -->
+                    <th style="width: 20%; background-color: white;">Viewers</th>
                 </tr>
             </thead>
             <tbody>
@@ -527,8 +527,8 @@
         </td>
 
         <xsl:variable name="template" select="@template" />
-        <td><xsl:value-of select="//OutputTemplate[@id = $template]/@label"/></td>
-        <td><xsl:value-of select="//OutputTemplate[@id = $template]/@format"/></td>
+        <!--  <td><xsl:value-of select="//OutputTemplate[@id = $template]/@label"/></td>
+        <td><xsl:value-of select="//OutputTemplate[@id = $template]/@format"/></td> -->
 
         <td>
             <xsl:for-each select="./viewers/viewer">
