@@ -77,7 +77,7 @@ table.display thead th {
 
 .dataTables_wrapper {
 	position: relative;
-	min-height: 120px;
+	min-height: 80px; /*120px;*/
 	clear: both;
 }
 
