@@ -535,9 +535,9 @@
 
         <td>
             <xsl:for-each select="./viewers/viewer">
-                <a><xsl:attribute name="href"><xsl:value-of select="@xlink:href" /><xsl:if test="/clam/@oauth_access_token != ''">?oauth_access_token=<xsl:value-of select="/clam/@oauth_access_token"/></xsl:if>download</xsl:attribute><xsl:value-of select="." /></a><xsl:text> | </xsl:text>
+                <a><xsl:attribute name="href"><xsl:value-of select="@xlink:href" /><xsl:if test="/clam/@oauth_access_token != ''">?oauth_access_token=<xsl:value-of select="/clam/@oauth_access_token"/></xsl:if></xsl:attribute><xsl:value-of select="." /></a><xsl:text> | </xsl:text>
             </xsl:for-each>
-            <a><xsl:attribute name="href"><xsl:value-of select="@xlink:href" /> <xsl:if test="/clam/@oauth_access_token != ''">?oauth_access_token=<xsl:value-of select="/clam/@oauth_access_token"/></xsl:if>download</xsl:attribute>Download</a>
+            <a><xsl:attribute name="href"><xsl:value-of select="@xlink:href" /> <xsl:if test="/clam/@oauth_access_token != ''">?oauth_access_token=<xsl:value-of select="/clam/@oauth_access_token"/></xsl:if> </xsl:attribute>Download</a>
             <!--  <xsl:if test="@template">
                 <xsl:text> | </xsl:text>
                 <a><xsl:attribute name="href"><xsl:value-of select="@xlink:href" />/metadata<xsl:if test="/clam/@oauth_access_token != ''">?oauth_access_token=<xsl:value-of select="/clam/@oauth_access_token"/></xsl:if></xsl:attribute>Metadata</a>
