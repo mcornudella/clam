@@ -691,16 +691,20 @@ function initclam() { //eslint-disable-line no-unused-vars, complexity
                                 "bJQueryUI": false,
                                 "paging":   false,
                                 "ordering": false,
-                                "info":     false//"sPaginationType": "full_numbers"
+                                //"sPaginationType": "full_numbers"
                          });
 
    $('#outputfiles').dataTable( {
                 "bJQueryUI": false,
-                "sPaginationType": "full_numbers"
+                "paging":   false,
+                "ordering": false,
+                //"sPaginationType": "full_numbers"
             });
    $('#projects').dataTable( {
                 "bJQueryUI": false,
-                "sPaginationType": "full_numbers" //"two_button"
+                "paging":   false,
+                "ordering": false,
+                //"sPaginationType": "full_numbers"
             });
 
 
