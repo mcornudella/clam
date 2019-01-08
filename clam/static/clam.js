@@ -772,7 +772,7 @@ function initclam() { //eslint-disable-line no-unused-vars, complexity
                 $('#editorcontents').val('');
                 $('#editorfilename').val('');
                 $(document).scrollTop( $("#header").offset().top );
-                //$("#editor").slideUp(400, function(){ $("#editormask").hide(); } );
+                $("#editor").slideUp(400, function(){ $("#editormask").hide(); } );
             },
             error: function(response, errortype){ //eslint-disable-line no-unused-vars
                 processuploadresponse(response.responseXML, '#selectparameters');//'#editorparameters');
