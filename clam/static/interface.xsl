@@ -198,7 +198,7 @@
 </xsl:template>
 
 <xsl:template name="footer">
-    <div id="footer" class="box">
+    <div id="footer" class="box" style="border: none">
         <p>
             <strong><xsl:value-of select="/clam/@name" /></strong>
             <xsl:if test="/clam/version != ''">
