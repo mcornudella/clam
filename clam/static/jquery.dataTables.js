@@ -905,18 +905,17 @@
 			 * Scope:    jQuery.dataTable.classSettings 
 			 */
 			this.oFeatures = {
-				"bPaginate": false, //"bPaginate": true,
-				"searching": false
-				/*"bLengthChange": true,
+				"bPaginate": true,
+				"bLengthChange": true,
 				"bFilter": true,
 				"bSort": true,
-				"bInfo": false,//"bInfo": true,
-				"searching": false,
+				"bInfo": true,
+				"searching": true,
 				"bAutoWidth": true,
 				"bProcessing": false,
 				"bSortClasses": true,
 				"bStateSave": false,
-				"bServerSide": false*/
+				"bServerSide": false
 			};
 			
 			/*
@@ -957,7 +956,7 @@
 			 */
 			this.oLanguage = {
 				"sProcessing": "Processing...",
-				//"sLengthMenu": "Show _MENU_ entries",
+				"sLengthMenu": "Show _MENU_ entries",
 				"sZeroRecords": "No matching records found",
 				"sEmptyTable": "No data available in table",
 				"sInfo": "Showing _START_ to _END_ of _TOTAL_ entries",
