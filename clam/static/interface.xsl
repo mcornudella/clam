@@ -200,7 +200,7 @@
 <xsl:template name="footer">
     <div id="footer" class="box" style="border: none">
         <p>
-            <strong><xsl:value-of select="/clam/@name" /></strong>
+            <!--  <strong><xsl:value-of select="/clam/@name" /></strong> -->
             <xsl:if test="/clam/version != ''">
                 - version <xsl:value-of select="/clam/version" />
             </xsl:if><br/>
@@ -228,6 +228,7 @@
             <strong>CLAM</strong> is funded by <a href="http://www.clarin.nl/">CLARIN-NL</a> and its successor <a href="http://www.clariah.nl">CLARIAH</a>.
         </span>
         -->
+        <p><img class="bottomline" src="{/clam/@baseurl}/static/bottom-line.png" /></p>
     </div>
 
 </xsl:template>
