@@ -905,11 +905,11 @@
 			 * Scope:    jQuery.dataTable.classSettings 
 			 */
 			this.oFeatures = {
-				"bPaginate": true,
+				"bPaginate": false, //"bPaginate": true,
 				"bLengthChange": true,
 				"bFilter": true,
 				"bSort": true,
-				"bInfo": true,
+				"bInfo": false,//"bInfo": true,
 				"bAutoWidth": true,
 				"bProcessing": false,
 				"bSortClasses": true,
