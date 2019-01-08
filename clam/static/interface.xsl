@@ -437,7 +437,7 @@
         
 		
         <div id="inputfilesarea">
-        <h3>Input files</h3>
+        <!--  <h3>Input files</h3> -->
         <table id="inputfiles" class="files">
             <thead>
                 <tr>
