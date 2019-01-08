@@ -808,6 +808,7 @@ function initclam() { //eslint-disable-line no-unused-vars, complexity
                     processuploadresponse(response, '#selectparameters');//'#urluploadparameters');
                     $('#urluploadprogress').hide();
                     $('#urlupload').show();
+                    $("#fineuploadarea").slideUp(400, function(){ $("#clientupload").hide(); } );
                 },
                 error: function(response, errortype){ //eslint-disable-line no-unused-vars
                     processuploadresponse(response.responseXML, '#selectparameters');//'#urluploadparameters');
@@ -855,7 +856,7 @@ function initclam() { //eslint-disable-line no-unused-vars, complexity
                     return true;
                 }
                 processuploadresponse(responseJSON.xml, '#selectparameters');//'#uploadparameters');
-
+                $("#fineuploadarea").slideUp(400, function(){ $("#clientupload").hide(); } );
         }).on('click',function(){
                 var inputtemplate_id = $('#selectinputtemplate').val();//$('#uploadinputtemplate').val();
                 if (inputtemplate_id === "") {
