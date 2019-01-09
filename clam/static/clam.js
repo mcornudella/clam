@@ -278,7 +278,7 @@ function processuploadresponse(response, paramdiv) {
 
             //Add this file to the input table if it doesn't exist yet
             if (!found) {
-            	var selectLanguage = document.getElementByName("language");
+            	var selectLanguage = document.getElementsByName("language")[0];
             	var langSelected = selectLanguage.options[selectLanguage.selectedIndex].value;
             	//alert(JSON.stringify(document.getElementById('#selectparameters'), null, 4));
             	tableinputfiles.fnAddData( [  '<a href="' + baseurl + '/' + project + '/input/' + $(this).attr('filename') + '">' + $(this).attr('filename') + '</a>', $(this).attr('templatelabel'), $(this).find('parameters'),'<img src="' + baseurl + '/static/delete.png" title="Delete this file" onclick="deleteinputfile(\'' + langSelected + '\');" />' ] );
