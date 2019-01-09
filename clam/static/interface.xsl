@@ -487,11 +487,11 @@
         <table id="outputfiles" class="files">
             <thead>
                 <tr>
-                    <th style="width: 80%; background-color: white;">Output File</th>
+                    <th style="width: 80%; background-color: white;">Output Files</th>
                     <!-- <th style="width: 25%; background-color: white;">Template</th> -->
                     <!-- <th style="width: 20%">Language</th> -->
                     <!-- <th style="width: 20%; background-color: white;">Format</th>  -->
-                    <th style="width: 20%; background-color: white;">Viewers</th>
+                    <th style="width: 20%; background-color: white;">Download Files</th>
                 </tr>
             </thead>
             <tbody>
