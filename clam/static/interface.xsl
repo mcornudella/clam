@@ -448,8 +448,8 @@
                 </tr>
             </thead>
             <tbody>
-            	<script>fillTable();</script>
-                <!--  <xsl:apply-templates select="file" /> -->
+            	<!--  <script>fillTable();</script> -->
+                <xsl:apply-templates select="file" />
             </tbody>
         </table>
         </div>
