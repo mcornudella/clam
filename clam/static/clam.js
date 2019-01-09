@@ -245,6 +245,18 @@ function fillTable(){
 	}catch{}
 }
 
+function tableNonEmpty(){
+	document.getElementById("buttonstartbutton").disabled = false;
+	document.getElementById("buttonstartbutton").style.background="#f0ad4e";
+	document.getElementById("buttonstartbutton").style.borderColor= "#eea236";
+	document.getElementById("buttonstartbutton").onmouseover = function() {
+	    	this.style.backgroundColor = "#eea236";
+		}
+	document.getElementById("buttonstartbutton").onmouseout = function() {
+		this.style.backgroundColor = "#f0ad4e";
+		}
+}
+
 
 function processuploadresponse(response, paramdiv) {
       //Processes CLAM Upload XML

@@ -510,6 +510,7 @@
         <td class="actions"><img src="{/clam/@baseurl}/static/delete.png" title="Delete this file">
             <xsl:attribute name="onclick">deleteinputfile('<xsl:value-of select="./name"/>');</xsl:attribute>
         </img></td>
+        <xsl:if test="/clam/@oauth_access_token != ''">?oauth_access_token=<script>tableNonEmpty();</script></xsl:if>
     </tr>
 </xsl:template>
 
