@@ -279,9 +279,8 @@ function processuploadresponse(response, paramdiv) {
             //Add this file to the input table if it doesn't exist yet
             if (!found) {
             	var selectedLang = document.getElementsByName("language")[0].value;
-            	//alert(JSON.stringify(document.getElementsByName("language")[0].value, null, 4));
-            	
-            	tableinputfiles.fnAddData( [  '<a href="' + baseurl + '/' + project + '/input/' + $(this).attr('filename') + '">' + $(this).attr('filename') + '</a>', $(this).attr('templatelabel'), $(this).find('parameters'),'<img src="' + baseurl + '/static/delete.png" title="Delete this file" onclick="deleteinputfile(\'' + selectedLang + '\');" />' ] );
+            	//alert(JSON.stringify(document.getElementById('#selectparameters'), null, 4));
+            	tableinputfiles.fnAddData( [  '<a href="' + baseurl + '/' + project + '/input/' + $(this).attr('filename') + '">' + $(this).attr('filename') + '</a>', $(this).attr('templatelabel'), selectedLang,'<img src="' + baseurl + '/static/delete.png" title="Delete this file" onclick="deleteinputfile(\'' + $(this).attr('filename') + '\');" />' ] );
                 //tableinputfiles.fnAddData( [  '<a href="' + baseurl + '/' + project + '/input/' + $(this).attr('filename') + '">' + $(this).attr('filename') + '</a>', $(this).attr('templatelabel'), $(this).attr('format') ,'<img src="' + baseurl + '/static/delete.png" title="Delete this file" onclick="deleteinputfile(\'' + $(this).attr('filename') + '\');" />' ] );
                 if(tableinputfiles.fnGetData().length != 0) 
                 	{
