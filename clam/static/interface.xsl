@@ -424,8 +424,6 @@
 <xsl:template match="/clam/input">
         <h2>Input</h2>
 
-
-        
         <xsl:if test="/clam/inputsources/inputsource">
             <div id="corpusselection">
             <label>Add files from pre-installed input source: </label>
@@ -438,7 +436,6 @@
             </div>
         </xsl:if>
         
-		
         <div id="inputfilesarea">
         <!--  <h3>Input files</h3> -->
         <table id="inputfiles" class="files">
@@ -507,7 +504,8 @@
         <xsl:variable name="template" select="@template" />
         <td><xsl:value-of select="/clam/profiles/profile/input/InputTemplate[@id = $template]/@label"/></td>
          <!-- <td><xsl:value-of select="/clam/profiles/profile/input/InputTemplate[@id = $template]/ChoiceParameter[@id = @language]"/></td> -->
-         <td><xsl:value-of select="/clam/profiles/profile/input/InputTemplate[@id = $template]/@format"/></td>
+         <td><xsl:attribute name="href"><xsl:value-of select="@xlink:href"/><xsl:if test="/clam/@oauth_access_token != ''">?oauth_access_token=<xsl:value-of select="/clam/@oauth_access_token"/></xsl:if></xsl:attribute><xsl:value-of select="./name"/></td>
+         <!-- <td><xsl:value-of select="/clam/profiles/profile/input/InputTemplate[@id = $template]/@format"/></td> -->
         <td class="actions"><img src="{/clam/@baseurl}/static/delete.png" title="Delete this file">
             <xsl:attribute name="onclick">deleteinputfile('<xsl:value-of select="./name"/>');</xsl:attribute>
         </img></td>
