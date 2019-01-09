@@ -448,7 +448,7 @@
                 </tr>
             </thead>
             <tbody>
-                <xsl:apply-templates select="file" />
+                <xsl:apply-templates select="/clam/input/file" />
             </tbody>
         </table>
         </div>
