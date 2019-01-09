@@ -242,7 +242,7 @@ function fillTable(){
 	    		this.style.backgroundColor = "#686868";
 	    	}
 		}
-	}
+	}catch{}
 }
 
 
