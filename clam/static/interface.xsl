@@ -81,7 +81,7 @@
                 </div>
                 
                 <!--  <div id="input" class="box">
-                 <xsl:apply-templates select="input"/><!-- upload form transformed from input formats -->
+                 <xsl:apply-templates select="input"/> --> <!-- upload form transformed from input formats -->
                  <!-- <xsl:apply-templates select="profiles"/>
                 </div>
                 <xsl:apply-templates select="parameters"/>
