@@ -283,7 +283,7 @@ function processuploadresponse(response, paramdiv) {
             	//var selectedLang = document.getElementsByName("language")[0].value;
             	//tableinputfiles.fnAddData( [  '<a href="' + baseurl + '/' + project + '/input/' + $(this).attr('filename') + '">' + $(this).attr('filename') + '</a>', selectedLang,'<img src="' + baseurl + '/static/delete.png" title="Delete this file" onclick="deleteinputfile(\'' + $(this).attr('filename') + '\');" />' ] );
             	
-            	tableinputfiles.fnAddData( [  '<a href="' + baseurl + '/' + project + '/input/' + $(this).attr('filename') + '">' + $(this).attr('filename') + '</a>', $(this).attr('templatelabel'), selectedLang,'<img src="' + baseurl + '/static/delete.png" title="Delete this file" onclick="deleteinputfile(\'' + $(this).attr('filename') + '\');" />' ] );
+            	tableinputfiles.fnAddData( [  '<a href="' + baseurl + '/' + project + '/input/' + $(this).attr('filename') + '">' + $(this).attr('filename') + '</a>', $(this).attr('format') , '<img src="' + baseurl + '/static/delete.png" title="Delete this file" onclick="deleteinputfile(\'' + $(this).attr('filename') + '\');" />' ] );
                 //tableinputfiles.fnAddData( [  '<a href="' + baseurl + '/' + project + '/input/' + $(this).attr('filename') + '">' + $(this).attr('filename') + '</a>', $(this).attr('templatelabel'), $(this).attr('format') ,'<img src="' + baseurl + '/static/delete.png" title="Delete this file" onclick="deleteinputfile(\'' + $(this).attr('filename') + '\');" />' ] );
                 if(tableinputfiles.fnGetData().length != 0) 
                 	{
