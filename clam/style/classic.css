@@ -63,7 +63,7 @@ h3 {
 
 #covershadow {
     display: block;
-    background-color: #837e75;
+    background-color: #ffffff; /*#837e75;*/
     padding: 0px;
     height: 8px;
     width: 100%;
@@ -77,7 +77,7 @@ h3 {
 }
 
 .box {
-    background: #f6f6f6;
+    background: #ffffff; /*#f6f6f6;*/
     border-radius: 20px;
 	/*-moz-box-shadow: 5px 5px 5px #666;
 	-webkit-box-shadow: 5px 5px 5px #666;
@@ -108,24 +108,24 @@ table.files td {
 }
 
 table.files thead th {
-    background: #cbcbcb;
+    background: #ffffff; /*#cbcbcb*/
     -moz-border-radius: 5px; /* CSS3 for Mozilla */
     -webkit-border-radius: 5px; /* CSS3 for Safari */
 }
 
 table.files td.actions {
-    background: #eee;
+    background: #ffffff; /*#eee*/
     text-align: center;
 }
 
 .parameters table th, #parameters table  td {
-  border-bottom:  1px solid #e1e1e1;
+  border-bottom:  1px solid #ffffff; /*#e1e1e1;*/
 }
 
 .parameters h4 {
     color: #ac8644;
     text-decoration: small-caps;  
-    border-bottom:  1px solid #bfbfbf;/*#ca9c4d;*/
+    border-bottom:  1px solid #ffffff; /*#bfbfbf;*/ /*#ca9c4d;*/
 }
 
 input[type="text"], select, textarea, #editorfilename, #urluploadfile, #projectname {

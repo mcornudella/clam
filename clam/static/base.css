@@ -83,7 +83,7 @@ div#loader {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    background: #f6f6f6;
+    background: #ffffff;/*#f6f6f6;*/
     background-repeat: no-repeat;
     border: 1px solid #ca9c4d;
     padding: 10px;
@@ -166,7 +166,7 @@ table.files li {
 
 
 #tabs {
-    background: #cc9d92;/*#c9bea8;*/
+    background: #ffffff; /*#cc9d92;/*#c9bea8;*/
 }
 #tabs ol {
     margin: 0px;
@@ -176,7 +176,7 @@ table.files li {
 	display: inline-block;
     margin: 0px;
     padding: 3px;
-    background: #cc9d92; /*#c9bea8;*/
+    background: #ffffff; /*#cc9d92;*/ /*#c9bea8;*/
 }
 
 
