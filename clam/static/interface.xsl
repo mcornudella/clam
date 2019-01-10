@@ -556,7 +556,6 @@
 </xsl:template>
 
 <xsl:template match="/clam/parameters">
-    <form method="POST" enctype="multipart/form-data" action="">
     <div id="parameters" class="box parameters">
         <!--  <h2>Parameter Selection</h2>  -->
 
@@ -574,7 +573,7 @@
         <div id="selectparameters" class="parameters"><em>Select a type first</em></div>
 
     </div>
-    
+    <form method="POST" enctype="multipart/form-data" action="">
     <div id="startbutton">
             <input id="buttonstartbutton" type="submit" class="start" value="Run" disabled="disabled" /> <!--  type="submit" -->
         </div>
