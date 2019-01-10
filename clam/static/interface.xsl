@@ -358,7 +358,7 @@
 
             <div class="uploadform">
             	<div onclick="showHide('clientupload');hide('urlupload');hide('editor');">
-                	<h3 style="font-size: 120%; color:  #006DCC;"><span class="glyphicon glyphicon-check"> Upload a file from disk</h3>
+                	<h3 style="font-size: 120%; color:  #006DCC;"><span class="glyphicon glyphicon-check"> </span> Upload a file from disk</h3>
                 </div>	
                 <div id="clientupload" style="display: none;" >
                 <p>Use this to upload files from your computer to the system.</p>
