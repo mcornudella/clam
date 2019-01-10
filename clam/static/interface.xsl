@@ -133,6 +133,7 @@
     <link rel="stylesheet" href="{/clam/@baseurl}/static/fineuploader.css" type="text/css" />
     <link rel="stylesheet" href="{/clam/@baseurl}/static/table.css" type="text/css" />
     <link rel="stylesheet" href="{/clam/@baseurl}/style.css" type="text/css" />
+    <link rel="stylesheet" href="{/clam/@baseurl}/static/css/bootstrap.min.css" type="text/css" />
 
     <script type="text/javascript" src="{/clam/@baseurl}/static/jquery-1.8.3.min.js" />
     <script type="text/javascript" src="{/clam/@baseurl}/static/jquery-ui-1.9.2.custom.min.js" />
