@@ -80,7 +80,7 @@
                 <div id="input" class="box">
                  <xsl:apply-templates select="input"/>
                 </div>
-                
+                <xsl:apply-templates select="submit"/>
                 <!--  <div id="input" class="box">
                  <xsl:apply-templates select="input"/> --> <!-- upload form transformed from input formats -->
                  <!-- <xsl:apply-templates select="profiles"/>
@@ -574,8 +574,16 @@
         <div id="selectparameters" class="parameters"> </div>
 
     </div>
-    <form method="POST" enctype="multipart/form-data" action="">
+    <!--  <form method="POST" enctype="multipart/form-data" action="">
     <div id="startbutton">
+            <input id="buttonstartbutton" type="submit" class="start" value="Run" disabled="disabled" /> 
+        </div>
+    </form> -->
+</xsl:template>
+
+<xsl:template match="/clam/submit">
+	<form method="POST" enctype="multipart/form-data" action="">
+    	<div id="startbutton">
             <input id="buttonstartbutton" type="submit" class="start" value="Run" disabled="disabled" /> <!--  type="submit" -->
         </div>
     </form>
