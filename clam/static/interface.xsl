@@ -133,7 +133,6 @@
     <link rel="stylesheet" href="{/clam/@baseurl}/static/fineuploader.css" type="text/css" />
     <link rel="stylesheet" href="{/clam/@baseurl}/static/table.css" type="text/css" />
     <link rel="stylesheet" href="{/clam/@baseurl}/style.css" type="text/css" />
-    <link rel="stylesheet" href="{/clam/@baseurl}/static/css/bootstrap.min.css" type="text/css" />
 
     <script type="text/javascript" src="{/clam/@baseurl}/static/jquery-1.8.3.min.js" />
     <script type="text/javascript" src="{/clam/@baseurl}/static/jquery-ui-1.9.2.custom.min.js" />
@@ -359,7 +358,7 @@
 
             <div class="uploadform">
             	<div onclick="showHide('clientupload');hide('urlupload');hide('editor');">
-                	<h3 style="font-size: 120%; color:  #006DCC;"><span class="glyphicon glyphicon-check"> </span> Upload a file from disk</h3>
+                	<h3 style="font-size: 120%; color:  #006DCC;"> Upload a file from disk</h3>
                 </div>	
                 <div id="clientupload" style="display: none;" >
                 <p>Use this to upload files from your computer to the system.</p>
