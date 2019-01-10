@@ -525,7 +525,7 @@
 </xsl:template>
 
 <xsl:template match="/clam/output/file">
- <xsl:when test="./name != error.log">
+ <!--  <xsl:when test="./name != error.log"> -->
     <tr>
     	<xsl:value-of select="./name"/>
 	        <td class="file">
@@ -554,7 +554,7 @@
 	            </xsl:if> -->
 	        </td>
     </tr>
-    </xsl:when>
+    <!-- </xsl:when> -->
     
 </xsl:template>
 
