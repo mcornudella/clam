@@ -322,6 +322,7 @@
 </xsl:template>
 
 <xsl:template match="/clam/profiles">
+	<h3> 2.- Choose how to upload files: </h3>
         <div id="uploadarea">
 
             <xsl:if test="profile/input/InputTemplate/inputsource|/clam/inputsources/inputsource">
@@ -430,7 +431,7 @@
 
 
 <xsl:template match="/clam/input">
-        <h2>Input</h2>
+        <h2>Uploaded files</h2>
 
         <xsl:if test="/clam/inputsources/inputsource">
             <div id="corpusselection">
@@ -568,8 +569,8 @@
 
         <input id="usecorpus" name="usecorpus" type="hidden" value="" />
         
-        <h3>Choose parameters: </h3>
-        <em>Select the desired input type:</em><select id="selectinputtemplate" class="inputtemplates"></select>
+        <h3> 1.- Choose input parameters: </h3>
+        <em>Select the input type: </em><select id="selectinputtemplate" class="inputtemplates"></select>
         <div id="selectparameters" class="parameters"><em>Select a type first</em></div>
 
         <div id="startbutton">
