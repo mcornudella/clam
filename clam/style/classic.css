@@ -309,7 +309,7 @@ input#indexbutton:hover, input#abortbutton:hover, input#restartbutton:hover, inp
 div#startbutton input {
 	background: #686868; /*#8a4949;*/
 	border-color: #575757;
-	padding: 14px;
+	/*padding: 14px;*/
 	color: white;
 	font-weight: bold;
 	font-size: 26px;
