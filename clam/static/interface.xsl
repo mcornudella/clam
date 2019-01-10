@@ -358,7 +358,7 @@
 
             <div class="uploadform">
             	<div onclick="showHide('clientupload');hide('urlupload');hide('editor');">
-                	<h3 style="font-size: 120%; color:  #006DCC;"> Upload a file from disk</h3>
+                	<h3 style="font-size: 120%; color:  #006DCC; cursor: pointer;"> Upload a file from disk</h3>
                 </div>	
                 <div id="clientupload" style="display: none;" >
                 <p>Use this to upload files from your computer to the system.</p>
@@ -387,7 +387,7 @@
             <xsl:if test="contains(/clam/@interfaceoptions,'inputfromweb')">
 				<div class="urluploadform">
 					<div onclick="showHide('urlupload');hide('clientupload');hide('editor');">
-	            		<h3 style="font-size: 120%; color:  #006DCC;"> Grab a file from the web</h3>
+	            		<h3 style="font-size: 120%; color:  #006DCC; cursor: pointer;"> Grab a file from the web</h3>
 	            	</div>
 		            <div id="urlupload" style="display: none;">
 		                <p>Retrieves an input file from another location on the web.</p>
@@ -408,7 +408,7 @@
 			
 				<div class="editoruploadform">
 					<div onclick="showHide('editor');hide('clientupload');hide('urlupload');">
-		            	<h3 style="font-size: 120%; color:  #006DCC;">  Add input from browser</h3>
+		            	<h3 style="font-size: 120%; color:  #006DCC; cursor: pointer;" >  Add input from browser</h3>
 		            </div>
 		
 					<div id="editor" style="display: none;">
@@ -569,7 +569,7 @@
 
         <!-- <input id="usecorpus" name="usecorpus" type="hidden" value="" /> -->
         
-        <h3 style= "cursor: pointer;"> 1.- Choose input parameters: </h3>
+        <h3> 1.- Choose input parameters: </h3>
         <em>Select the input type: </em><select id="selectinputtemplate" class="inputtemplates"></select>
         <!-- <div id="selectparameters" class="parameters">  <em>Select a type first</em> </div> -->
         <div id="selectparameters" class="parameters"> </div>
