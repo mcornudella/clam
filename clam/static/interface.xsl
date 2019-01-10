@@ -73,11 +73,9 @@
             <!--  <xsl:apply-templates select="status"/>  -->
             <xsl:choose>
               <xsl:when test="status/@code = 0">
+				<xsl:apply-templates select="parameters"/>
                 <div id="input" class="box">
-                  <xsl:apply-templates select="parameters"/>
-                </div>
-                <div id="input" class="box">
-                <xsl:apply-templates select="profiles"/>
+                 <xsl:apply-templates select="profiles"/>
                 </div>
                 <div id="input" class="box">
                  <xsl:apply-templates select="input"/>
