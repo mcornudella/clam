@@ -567,7 +567,7 @@
          </table>
         </xsl:for-each> -->
 
-        <input id="usecorpus" name="usecorpus" type="hidden" value="" />
+        <!-- <input id="usecorpus" name="usecorpus" type="hidden" value="" /> -->
         
         <h3> 1.- Choose input parameters: </h3>
         <em>Select the input type: </em><select id="selectinputtemplate" class="inputtemplates"></select>
