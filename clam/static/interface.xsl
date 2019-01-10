@@ -347,13 +347,13 @@
 
             <div class="uploadform">
             	<div onclick="showHide('clientupload');hide('urlupload');hide('editor');">
-                	<h3> -> Upload a file from disk</h3>
+                	<h3 style="font-size: 120%; color:  #006DCC;"> (1) Upload a file from disk</h3>
                 </div>	
                 <div id="clientupload" style="display: none;" >
                 <p>Use this to upload files from your computer to the system.</p>
                     <!--  <strong>Step 1)</strong><xsl:text> </xsl:text><em>First select what type of file you want to add:</em><xsl:text> </xsl:text><select id="uploadinputtemplate" class="inputtemplates"></select><br /> -->
                     <!--  <strong>Step 2)</strong><xsl:text> </xsl:text><em>Set the parameters for the file(s) you are about to upload:</em><xsl:text> </xsl:text><div id="uploadparameters" class="parameters"><em>Select a type first</em></div> -->
-                    <strong>Step 1)</strong><xsl:text> </xsl:text><em>Click the upload button below and then select one or more files (holding control), you can also drag &amp; drop files onto the button from an external file manager</em><xsl:text> </xsl:text>
+                    <!--  <strong>Step 1)</strong>--><xsl:text> </xsl:text><em>Click the upload button below and then select one or more files (holding control), you can also drag &amp; drop files onto the button from an external file manager</em><xsl:text> </xsl:text>
                     <xsl:choose>
                     <xsl:when test="contains(/clam/@interfaceoptions,'simpleupload') or contains(/clam/@interfaceoptions,'secureonly')">
                     	<input id="uploadbutton" class="uploadbutton" type="submit" value="Select and upload a file" />
@@ -376,7 +376,7 @@
             <xsl:if test="contains(/clam/@interfaceoptions,'inputfromweb')">
 				<div class="urluploadform">
 					<div onclick="showHide('urlupload');hide('clientupload');hide('editor');">
-	            		<h3> -> Grab a file from the web</h3>
+	            		<h3> (2) Grab a file from the web</h3>
 	            	</div>
 		            <div id="urlupload" style="display: none;">
 		                <p>Retrieves an input file from another location on the web.</p>
@@ -397,7 +397,7 @@
 			
 				<div class="editoruploadform">
 					<div onclick="showHide('editor');hide('clientupload');hide('urlupload');">
-		            	<h3> -> Add input from browser</h3>
+		            	<h3> (3) Add input from browser</h3>
 		            </div>
 		
 					<div id="editor" style="display: none;">
