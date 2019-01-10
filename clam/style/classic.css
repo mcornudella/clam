@@ -185,7 +185,7 @@ input.uploadbutton {
 }
 
 #tabs li.disabled {
-	font-size: 90%;
+	font-size: 110%;
 	padding: 7px;
 	/*margin: 10px 0;*/
 	margin-right:8px;
@@ -200,7 +200,7 @@ input.uploadbutton {
 }
 
 #tabs li.restart, #tabs li.restart a {
-	font-size: 90%;
+	font-size: 110%;
 	padding: 7px;
 	margin: 10px 0;
 	border-top-left-radius: 12px;

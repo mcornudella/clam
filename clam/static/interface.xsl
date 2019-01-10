@@ -570,7 +570,7 @@
         
         <h3> 1.- Choose input parameters: </h3>
         <em>Select the input type: </em><select id="selectinputtemplate" class="inputtemplates"></select>
-        <div id="selectparameters" class="parameters"><em>Select a type first</em></div>
+        <div id="selectparameters" class="parameters"> <!--  --><em>Select a type first</em> --></div>
 
     </div>
     <form method="POST" enctype="multipart/form-data" action="">
