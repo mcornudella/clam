@@ -188,6 +188,7 @@ input.uploadbutton {
 #tabs li.disabled {
 	font-size: 110%;
 	padding: 7px;
+	cursor: none;
 	/*margin: 10px 0;*/
 	margin-right:8px;
 	border-top-left-radius: 6px;
