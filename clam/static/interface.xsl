@@ -84,8 +84,8 @@
                  <xsl:apply-templates select="input"/> --> <!-- upload form transformed from input formats -->
                  <!-- <xsl:apply-templates select="profiles"/>
                 </div>
-                <xsl:apply-templates select="parameters"/>
-              </xsl:when> -->
+                <xsl:apply-templates select="parameters"/> -->
+              </xsl:when> 
               <xsl:when test="status/@code = 1">
                 <xsl:apply-templates select="status"/> 
               </xsl:when>
