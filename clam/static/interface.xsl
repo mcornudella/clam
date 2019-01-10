@@ -358,7 +358,7 @@
 
             <div class="uploadform">
             	<div onclick="showHide('clientupload');hide('urlupload');hide('editor');">
-                	<h3 style="font-size: 120%; color:  #006DCC;"> Upload a file from disk</h3>
+                	<h3 style="font-size: 120%; color:  #006DCC;"><span class="glyphicon glyphicon-check"> Upload a file from disk</h3>
                 </div>	
                 <div id="clientupload" style="display: none;" >
                 <p>Use this to upload files from your computer to the system.</p>
@@ -581,15 +581,6 @@
         </div>
     </form> -->
 </xsl:template>
-
-<!--  <xsl:template match="/clam/submit_form">
-	<form method="POST" enctype="multipart/form-data" action="">
-    	<div id="startbutton">
-            <input id="buttonstartbutton" type="submit" class="start" value="Run" disabled="disabled" /> 
-        </div>
-    </form>
-</xsl:template> -->
-
 
 <xsl:template match="/clamupload">
   <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
