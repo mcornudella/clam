@@ -80,7 +80,9 @@
                 <div id="input" class="box">
                  <xsl:apply-templates select="input"/>
                 </div>
-                <xsl:apply-templates select="submit"/>
+                <div>
+                 <xsl:apply-templates select="submitform"/>
+                </div>
                 <!--  <div id="input" class="box">
                  <xsl:apply-templates select="input"/> --> <!-- upload form transformed from input formats -->
                  <!-- <xsl:apply-templates select="profiles"/>
@@ -249,7 +251,6 @@
     </div>
 </xsl:template>
 
-
 <xsl:template match="/clam/status">
     <div id="status" class="box">
      <h2>Status</h2>
@@ -307,7 +308,6 @@
 
     </div>
 </xsl:template>
-
 
 <xsl:template name="log">
         <div id="statuslog">
@@ -428,7 +428,6 @@
 
         </div>
 </xsl:template>
-
 
 <xsl:template match="/clam/input">
         <h2>Uploaded files</h2>
@@ -581,7 +580,7 @@
     </form> -->
 </xsl:template>
 
-<xsl:template match="/clam/submit">
+<xsl:template match="/clam/submit_form">
 	<form method="POST" enctype="multipart/form-data" action="">
     	<div id="startbutton">
             <input id="buttonstartbutton" type="submit" class="start" value="Run" disabled="disabled" /> <!--  type="submit" -->
