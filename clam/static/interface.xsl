@@ -77,6 +77,9 @@
                   <xsl:apply-templates select="parameters"/>
                 </div>
                 <div id="input" class="box">
+                <xsl:apply-templates select="profiles"/>
+                </div>
+                <div id="input" class="box">
                  <xsl:apply-templates select="input"/>
                 </div>
                 
