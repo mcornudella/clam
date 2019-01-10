@@ -442,13 +442,12 @@
             <thead>
                 <tr>
                     <th style="width: 60%; background-color: white;">Input File</th>
-                    <th style="width: 30%; background-color: white;">Language</th>
-                    <!--  <th style="width: 30%; background-color: white;">Format</th> -->
+                    <!--   <th style="width: 30%; background-color: white;">Language</th> -->
+                    <th style="width: 30%; background-color: white;">Format</th>
                     <th style="width: 10%; background-color: white;">Actions</th>
                 </tr>
             </thead>
             <tbody>
-            	<!--  <script>fillTable();</script> -->
                 <xsl:apply-templates select="file" />
             </tbody>
         </table>

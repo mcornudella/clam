@@ -210,52 +210,6 @@ function pollstatus() {
     });
 }
 
-function fillTable(){
-	try{
-		var data = tableinputfiles.fnGetData();
-		
-		for (var i = 0; i < data.length; i++) {
-			var selectedLang = document.getElementsByName("language")[0].value;
-			tableinputfiles.fnAddData( [  '<a href="' + baseurl + '/' + project + '/input/' + $(this).attr('filename') + '">' + $(this).attr('filename') + '</a>', selectedLang,'<img src="' + baseurl + '/static/delete.png" title="Delete this file" onclick="deleteinputfile(\'' + $(this).attr('filename') + '\');" />' ] );
-		}
-		
-		if(tableinputfiles.fnGetData().length != 0) 
-		{
-		document.getElementById("buttonstartbutton").disabled = false;
-		document.getElementById("buttonstartbutton").style.background="#f0ad4e";
-		document.getElementById("buttonstartbutton").style.borderColor= "#eea236";
-		document.getElementById("buttonstartbutton").onmouseover = function() {
-		    	this.style.backgroundColor = "#eea236";
-			}
-		document.getElementById("buttonstartbutton").onmouseout = function() {
-			this.style.backgroundColor = "#f0ad4e";
-			}
-		}else
-		{
-			document.getElementById("buttonstartbutton").disabled = true;
-			document.getElementById("buttonstartbutton").style.background="#686868";
-			document.getElementById("buttonstartbutton").style.borderColor="#575757";
-			document.getElementById("buttonstartbutton").onmouseover = function() {
-		    	this.style.backgroundColor = "grey";
-			}
-			document.getElementById("buttonstartbutton").onmouseout = function() {
-	    		this.style.backgroundColor = "#686868";
-	    	}
-		}
-	}catch{}
-}
-
-function tableNonEmpty(){
-	document.getElementById("buttonstartbutton").disabled = false;
-	document.getElementById("buttonstartbutton").style.background="#f0ad4e";
-	document.getElementById("buttonstartbutton").style.borderColor= "#eea236";
-	document.getElementById("buttonstartbutton").onmouseover = function() {
-	    	this.style.backgroundColor = "#eea236";
-		}
-	document.getElementById("buttonstartbutton").onmouseout = function() {
-		this.style.backgroundColor = "#f0ad4e";
-		}
-}
 
 
 function processuploadresponse(response, paramdiv) {
@@ -325,10 +279,10 @@ function processuploadresponse(response, paramdiv) {
 
             //Add this file to the input table if it doesn't exist yet
             if (!found) {
-            	var selectedLang = document.getElementsByName("language")[0].value;
-            	//alert(JSON.stringify(document.getElementById('#selectparameters'), null, 4));
-            	tableinputfiles.fnAddData( [  '<a href="' + baseurl + '/' + project + '/input/' + $(this).attr('filename') + '">' + $(this).attr('filename') + '</a>', selectedLang,'<img src="' + baseurl + '/static/delete.png" title="Delete this file" onclick="deleteinputfile(\'' + $(this).attr('filename') + '\');" />' ] );
-            	//tableinputfiles.fnAddData( [  '<a href="' + baseurl + '/' + project + '/input/' + $(this).attr('filename') + '">' + $(this).attr('filename') + '</a>', $(this).attr('templatelabel'), selectedLang,'<img src="' + baseurl + '/static/delete.png" title="Delete this file" onclick="deleteinputfile(\'' + $(this).attr('filename') + '\');" />' ] );
+            	To add language
+            	//var selectedLang = document.getElementsByName("language")[0].value;
+            	//tableinputfiles.fnAddData( [  '<a href="' + baseurl + '/' + project + '/input/' + $(this).attr('filename') + '">' + $(this).attr('filename') + '</a>', selectedLang,'<img src="' + baseurl + '/static/delete.png" title="Delete this file" onclick="deleteinputfile(\'' + $(this).attr('filename') + '\');" />' ] );
+            	tableinputfiles.fnAddData( [  '<a href="' + baseurl + '/' + project + '/input/' + $(this).attr('filename') + '">' + $(this).attr('filename') + '</a>', $(this).attr('templatelabel'), selectedLang,'<img src="' + baseurl + '/static/delete.png" title="Delete this file" onclick="deleteinputfile(\'' + $(this).attr('filename') + '\');" />' ] );
                 //tableinputfiles.fnAddData( [  '<a href="' + baseurl + '/' + project + '/input/' + $(this).attr('filename') + '">' + $(this).attr('filename') + '</a>', $(this).attr('templatelabel'), $(this).attr('format') ,'<img src="' + baseurl + '/static/delete.png" title="Delete this file" onclick="deleteinputfile(\'' + $(this).attr('filename') + '\');" />' ] );
                 if(tableinputfiles.fnGetData().length != 0) 
                 	{
