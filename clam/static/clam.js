@@ -844,7 +844,7 @@ function initclam() { //eslint-disable-line no-unused-vars, complexity
         }).on('submit', function(e, id, fileName) { //eslint-disable-line no-unused-vars
                 var inputtemplate_id = $('#selectinputtemplate').val(); //$('#uploadinputtemplate').val();
                 if (inputtemplate_id === "") {
-                    alert("Please select a desired input type first");
+                    alert("Please select the input parameters first");
                     return false;
                 }
                 var params = {inputtemplate: inputtemplate_id, user:user, accesstoken:accesstoken };
@@ -866,7 +866,7 @@ function initclam() { //eslint-disable-line no-unused-vars, complexity
         }).on('click',function(){
                 var inputtemplate_id = $('#selectinputtemplate').val();//$('#uploadinputtemplate').val();
                 if (inputtemplate_id === "") {
-                    alert("Please select a desired input type first");
+                    alert("Please select the input parameters first");
                     return false;
                 }
         });
