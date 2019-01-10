@@ -569,7 +569,7 @@
 
         <!-- <input id="usecorpus" name="usecorpus" type="hidden" value="" /> -->
         
-        <h3> 1.- Choose input parameters: </h3>
+        <h3 style= "cursor: pointer;"> 1.- Choose input parameters: </h3>
         <em>Select the input type: </em><select id="selectinputtemplate" class="inputtemplates"></select>
         <!-- <div id="selectparameters" class="parameters">  <em>Select a type first</em> </div> -->
         <div id="selectparameters" class="parameters"> </div>
