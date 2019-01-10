@@ -526,7 +526,7 @@
 
 <xsl:template match="/clam/output/file">
     <tr>
-		<xsl:when test="not(contains('./name', 'error'))">
+		<xsl:when test="not(contains("./name", "error"))">
 	        <td class="file">
 	        <xsl:choose>
 	        <xsl:when test="./viewers/viewer[1]">
