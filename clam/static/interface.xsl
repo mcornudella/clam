@@ -527,9 +527,11 @@
 <xsl:template match="/clam/output/file">
  <!--  <xsl:when test="./name != error.log"> -->
     <tr>
+    	 <xsl:when test="./name != 'error.log'">
     	<xsl:value-of select="./name"/>
 	        <td class="file">
 	        <xsl:choose>
+	        
 	        <xsl:when test="./viewers/viewer[1]">
 	            <a><xsl:attribute name="href"><xsl:value-of select="./viewers/viewer[1]/@xlink:href" /><xsl:if test="/clam/@oauth_access_token != ''">?oauth_access_token=<xsl:value-of select="/clam/@oauth_access_token"/></xsl:if></xsl:attribute><xsl:value-of select="./name"/></a>
 	        </xsl:when>
@@ -553,6 +555,7 @@
 	                <a><xsl:attribute name="href"><xsl:value-of select="@xlink:href" />/metadata<xsl:if test="/clam/@oauth_access_token != ''">?oauth_access_token=<xsl:value-of select="/clam/@oauth_access_token"/></xsl:if></xsl:attribute>Metadata</a>
 	            </xsl:if> -->
 	        </td>
+	     </xsl:when>
     </tr>
     <!-- </xsl:when> -->
     
