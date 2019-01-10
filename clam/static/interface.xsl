@@ -527,7 +527,7 @@
 <xsl:template match="/clam/output/file">
  <!--  <xsl:when test="./name != error.log"> -->
     <tr>
-    	 <xsl:if test="\./name != 'error\.log'">
+    	 <xsl:if test="./name = 'error.log'">
     	<xsl:value-of select="./name"/>
 	        <td class="file">
 	        <xsl:choose>
