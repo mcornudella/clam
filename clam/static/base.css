@@ -28,7 +28,6 @@ body {
 }
 
 #description {
-	font-size: 120;
     font-style: italic;
 }
 
@@ -214,6 +213,7 @@ table.files li {
     color: red;
 }
 .parameters th, .parameters td {
+	font-size: 120%;
     width: 49%;
     text-align: left;
 }
