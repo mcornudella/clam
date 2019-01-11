@@ -206,7 +206,7 @@ table.files li {
     font-weight: normal;
     font-style: italic;
     margin-left: 20px;
-    font-size: 90%;
+    /*font-size: 90%;*/
 }
 .parameters th .error {
     margin-left: 20px;
