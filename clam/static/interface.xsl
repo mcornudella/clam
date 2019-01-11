@@ -364,7 +364,7 @@
                 	<h3 style="font-size: 120%; color:  #006DCC; cursor: pointer;"> Upload a file from disk</h3>
                 </div>	
                 <div id="clientupload" style="display: none;" >
-                <p style="padding: 7px;">Use this to upload files from your computer to the system: <br/> - Click the upload button below and then select one or more files <br/> - Drag &amp; drop files onto the button from an external file manager</p>
+                <p style="padding: 7px;">Use this to upload files from your computer to the system. You can either: <br/> - Click the upload button below and then select one or more files <br/> - Drag &amp; drop files onto the button from an external file manager</p>
                 <!--  <p style="padding: 7px;">Use this to upload files from your computer to the system. </p> -->
                     <!--  <strong>Step 1)</strong><xsl:text> </xsl:text><em>First select what type of file you want to add:</em><xsl:text> </xsl:text><select id="uploadinputtemplate" class="inputtemplates"></select><br /> -->
                     <!--  <strong>Step 2)</strong><xsl:text> </xsl:text><em>Set the parameters for the file(s) you are about to upload:</em><xsl:text> </xsl:text><div id="uploadparameters" class="parameters"><em>Select a type first</em></div> -->
