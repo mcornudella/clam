@@ -371,7 +371,7 @@
                     	<input id="uploadbutton" class="uploadbutton" type="submit" value="Select and upload a file" />
                     </xsl:when>
                     <xsl:otherwise>
-                    	<div id="fineuploadarea"></div>
+                    	<div id="fineuploadarea" style="padding: 7px;margin-top:5px;"></div>
                     </xsl:otherwise>
                     </xsl:choose>
                 </div>
