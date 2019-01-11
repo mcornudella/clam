@@ -449,7 +449,7 @@
         
         <div id="inputfilesarea">
         <!--  <h3>Input files</h3> -->
-        <table id="inputfiles" class="files" style="padding: 7px;">
+        <table id="inputfiles" class="files">
             <thead>
                 <tr>
                     <th style="width: 50%; background-color: white;">Input File</th>
