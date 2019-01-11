@@ -449,7 +449,7 @@
         
         <div id="inputfilesarea">
         <!--  <h3>Input files</h3> -->
-        <table id="inputfiles" class="files">
+        <table id="inputfiles" class="files" style="padding: 7px;">
             <thead>
                 <tr>
                     <th style="width: 50%; background-color: white;">Input File</th>
@@ -575,9 +575,9 @@
         <!-- <input id="usecorpus" name="usecorpus" type="hidden" value="" /> -->
         
         <h3> 1.- Choose input parameters: </h3>
-        <em>Select the input type: </em><select id="selectinputtemplate" class="inputtemplates"></select>
+        <em style="padding: 7px;">Select the input type: </em><select id="selectinputtemplate" class="inputtemplates"></select>
         <!-- <div id="selectparameters" class="parameters">  <em>Select a type first</em> </div> -->
-        <div id="selectparameters" class="parameters"> </div>
+        <div id="selectparameters" class="parameters" style="padding: 7px;"> </div>
 
     </div>
     <!--  <form method="POST" enctype="multipart/form-data" action="">
