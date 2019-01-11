@@ -391,11 +391,11 @@
 	            		<h3 style="font-size: 120%; color:  #006DCC; cursor: pointer;"> Grab a file from the web</h3>
 	            	</div>
 		            <div id="urlupload" style="display: none;">
-		                <p>Retrieves an input file from another location on the web.</p>
+		                <p style="padding: 7px;">Retrieves an input file from another location on the web.</p>
 		                <!--  <strong>Step 1)</strong><xsl:text> </xsl:text><em>First select the desired input type:</em><xsl:text> </xsl:text><select id="urluploadinputtemplate" class="inputtemplates"></select><br /> -->
 		                 <!-- <strong>Step 2)</strong><xsl:text> </xsl:text><em>Set the parameters for the file you are adding:</em><xsl:text> </xsl:text><div id="urluploadparameters" class="parameters"><em>Select a type first</em></div> -->
-		                <strong>Step 1)</strong><xsl:text> </xsl:text><em>Enter the URL where to retrieve the file</em><xsl:text> </xsl:text><input id="urluploadfile" value="http://" /><br />
-		                <strong>Step 2)</strong><xsl:text> </xsl:text><input id="urluploadsubmit" class="uploadbutton" type="submit" value="Retrieve and add file" />
+		                <strong style="padding: 7px;">Step 1)</strong><xsl:text> </xsl:text><em>Enter the URL where to retrieve the file</em><xsl:text> </xsl:text><input id="urluploadfile" value="http://" /><br />
+		                <strong style="padding: 7px;">Step 2)</strong><xsl:text> </xsl:text><input id="urluploadsubmit" class="uploadbutton" type="submit" value="Retrieve and add file" />
 		            </div>
 				</div>
             </xsl:if>
@@ -413,8 +413,8 @@
 		            </div>
 		
 					<div id="editor" style="display: none;">
-						<p>You can create and add new files on the spot from within your browser. Type your text, choose the desired input type, fill the necessary parameters and choose a filename. Press <em>"Add to files"</em> when all done.</p>
-		                <table>
+						<p style="padding: 7px;">You can create and add new files on the spot from within your browser. Type your text, choose the desired input type, fill the necessary parameters and choose a filename. Press <em>"Add to files"</em> when all done.</p>
+		                <table style="padding: 7px;">
 		                 <tr><th><label for="editorcontents">Input text:</label></th><td><textarea id="editorcontents"></textarea></td></tr>
 		                 <!--  <tr><th><label for="editorinputtemplate">Input type:</label></th><td>
 		                  <select id="editorinputtemplate" class="inputtemplates"></select>
