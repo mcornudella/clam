@@ -638,7 +638,7 @@
                 </xsl:choose>
 				<li class="disabled"> Input &amp; Parameters</li>
 				<li class="disabled"> Processing</li>
-				<li class="disabled"> Output &amp; Visualisation</li>
+				<li class="disabled"> Output </li>
 			</ol>
 			<script>createrandomproject();</script>
 		</div>
