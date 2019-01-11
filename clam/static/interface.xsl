@@ -575,7 +575,7 @@
         <!-- <input id="usecorpus" name="usecorpus" type="hidden" value="" /> -->
         
         <h2> 1.- Choose input parameters: </h2>
-        <p style="padding: 7px;">Select the input type: <select id="selectinputtemplate" class="inputtemplates" style="padding: 25px;"></select> </p>
+        <p style="padding: 7px;">Select the input type: &nbsp; &nbsp; &nbsp;<select id="selectinputtemplate" class="inputtemplates" ></select> </p>
         <!-- <div id="selectparameters" class="parameters">  <em>Select a type first</em> </div> -->
         <div id="selectparameters" class="parameters" style="padding: 7px;"> </div>
 
