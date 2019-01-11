@@ -421,7 +421,7 @@
 					<div id="editor" style="display: none;">
 						<!-- <p style="padding: 7px;">You can create and add new files on the spot from within your browser. Type your text, choose the desired input type, fill the necessary parameters and choose a filename. Press <em>"Add to files"</em> when all done.</p> -->
 						<p style="padding: 7px;">Type your text, write a filename and press <em>"Add to files"</em>.</p>
-		                <table style="padding: 7px; width:100%">
+		                <table style="padding: 7px; width:85%">
 		                 <tr><th><label for="editorcontents">Input text:</label></th><td><textarea id="editorcontents"></textarea></td></tr>
 		                 <!--  <tr><th><label for="editorinputtemplate">Input type:</label></th><td>
 		                  <select id="editorinputtemplate" class="inputtemplates"></select>
