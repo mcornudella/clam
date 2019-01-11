@@ -471,7 +471,7 @@
     <div id="output" class="box">
         <h2>Output files</h2>
 
-        <p>(Download all as archive:
+        <p style="padding: 7px;">(Download all as archive:
           <xsl:choose>
           <xsl:when test="/clam/@oauth_access_token = ''">
             <a href="output/zip/">zip</a> | <a href="output/gz/">tar.gz</a> | <a href="output/bz2/">tar.bz2</a>)
