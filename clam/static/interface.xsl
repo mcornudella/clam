@@ -331,8 +331,8 @@
 
             <h3>Add already available resources</h3>
 
-            <div id="inputsourceupload">
-                    <strong>Step 1)</strong><xsl:text> </xsl:text><em>Select the resource you want to add:</em><xsl:text> </xsl:text>
+            <div id="inputsourceupload" style="padding: 7px;">
+                    <xsl:text> <strong>Step 1)</strong>  </xsl:text><em>Select the resource you want to add:</em><!--  <xsl:text> </xsl:text> -->
                     <select id="uploadinputsource">
                     <xsl:for-each select="/clam/inputsources/inputsource">
                         <option><xsl:attribute name="value"><xsl:value-of select="./@id" /></xsl:attribute><xsl:value-of select="." /></option>
