@@ -394,7 +394,7 @@
 		                <p style="padding: 7px;">Retrieves an input file from another location on the web.</p>
 		                <!--  <strong>Step 1)</strong><xsl:text> </xsl:text><em>First select the desired input type:</em><xsl:text> </xsl:text><select id="urluploadinputtemplate" class="inputtemplates"></select><br /> -->
 		                 <!-- <strong>Step 2)</strong><xsl:text> </xsl:text><em>Set the parameters for the file you are adding:</em><xsl:text> </xsl:text><div id="urluploadparameters" class="parameters"><em>Select a type first</em></div> -->
-		                <strong style="padding: 7px;">Step 1)</strong><xsl:text> </xsl:text><em>Enter the URL where to retrieve the file</em><xsl:text> </xsl:text><input id="urluploadfile" value="http://" /><br />
+		                <strong style="padding: 7px;">Step 1)</strong><xsl:text> </xsl:text><em>Enter the file URL </em><xsl:text> </xsl:text><input id="urluploadfile" value="http://" /><br />
 		                <strong style="padding: 7px;">Step 2)</strong><xsl:text> </xsl:text><input id="urluploadsubmit" class="uploadbutton" type="submit" value="Retrieve and add file" />
 		            </div>
 				</div>
@@ -413,7 +413,8 @@
 		            </div>
 		
 					<div id="editor" style="display: none;">
-						<p style="padding: 7px;">You can create and add new files on the spot from within your browser. Type your text, choose the desired input type, fill the necessary parameters and choose a filename. Press <em>"Add to files"</em> when all done.</p>
+						<!-- <p style="padding: 7px;">You can create and add new files on the spot from within your browser. Type your text, choose the desired input type, fill the necessary parameters and choose a filename. Press <em>"Add to files"</em> when all done.</p> -->
+						<p style="padding: 7px;">Type your text, write a filename and press <em>"Add to files"</em>.</p>
 		                <table style="padding: 7px;">
 		                 <tr><th><label for="editorcontents">Input text:</label></th><td><textarea id="editorcontents"></textarea></td></tr>
 		                 <!--  <tr><th><label for="editorinputtemplate">Input type:</label></th><td>
@@ -422,7 +423,7 @@
 		                 <tr><th><label for="editorparameters">Parameters:</label></th><td>
 		                    <div id="editorparameters" class="parameters"><em>Select a type first</em></div>
 		                 </td></tr> -->
-		                 <tr class="editorfilenamerow"><th><label for="editorfilename">Desired filename:</label></th><td><input id="editorfilename" /></td></tr>
+		                 <tr class="editorfilenamerow"><th><label for="editorfilename">Filename: </label></th><td><input id="editorfilename" /></td></tr>
 		                 <tr><th></th><td><input id="editorsubmit" class="uploadbutton" type="submit" value="Add to input files" /></td></tr>
 		                </table>
 		            </div>
