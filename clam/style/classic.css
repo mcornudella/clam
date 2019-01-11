@@ -130,6 +130,11 @@ table.files td.actions {
 }
 
 input[type="text"], select, textarea, #editorfilename, #urluploadfile, #projectname {
+    background: #ddd;
+    border: 1px solid #c9c9c9;/*#cfbf9d;*/
+}
+
+input[type="text"] #urluploadfile  {
 	width: 40%;
     background: #ddd;
     border: 1px solid #c9c9c9;/*#cfbf9d;*/
