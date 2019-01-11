@@ -81,8 +81,10 @@
                  <xsl:apply-templates select="input"/>
                 </div>
                 <form method="POST" enctype="multipart/form-data" action="">
-    			 <div id="startbutton">
-                  <input id="buttonstartbutton" type="submit" class="start" value="Run" disabled="disabled" /> 
+                <div class="box" style="border: none;">
+    			   <div id="startbutton">
+                     <input id="buttonstartbutton" type="submit" class="start" value="Run" disabled="disabled" /> 
+                   </div>
                  </div>
     			</form>
                 <!--  <div id="input" class="box">
