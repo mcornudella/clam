@@ -140,7 +140,7 @@ table#projects td {
 table.files th {
     font-weight: none;
     width: 60%;
-    padding: 4px;
+    /*padding: 4px;*/
 }
 table.files td {
     -moz-border-radius: 5px; /* CSS3 for Mozilla */
