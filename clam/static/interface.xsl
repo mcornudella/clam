@@ -471,17 +471,6 @@
     <div id="output" class="box">
         <h2>Output files</h2>
 
-        <p style="padding: 7px;">(Download all as archive:
-          <xsl:choose>
-          <xsl:when test="/clam/@oauth_access_token = ''">
-            <a href="output/zip/">zip</a> | <a href="output/gz/">tar.gz</a> | <a href="output/bz2/">tar.bz2</a>)
-          </xsl:when>
-          <xsl:otherwise>
-            <a href="output/zip/?oauth_access_token={/clam/@oauth_access_token}">zip</a> | <a href="output/gz/?oauth_access_token={/clam/@oauth_access_token}">tar.gz</a> | <a href="output/bz2/?oauth_access_token={/clam/@oauth_access_token}">tar.bz2</a>)
-          </xsl:otherwise>
-          </xsl:choose>
-        </p>
-
         <xsl:if test="/clam/forwarders">
             <p>
             Forward all output to:
@@ -507,6 +496,18 @@
                 <xsl:apply-templates select="file" />
             </tbody>
         </table>
+        
+        <p style="padding: 7px;">(Download all as archive:
+          <xsl:choose>
+          <xsl:when test="/clam/@oauth_access_token = ''">
+            <a href="output/zip/">zip</a> | <a href="output/gz/">tar.gz</a> | <a href="output/bz2/">tar.bz2</a>)
+          </xsl:when>
+          <xsl:otherwise>
+            <a href="output/zip/?oauth_access_token={/clam/@oauth_access_token}">zip</a> | <a href="output/gz/?oauth_access_token={/clam/@oauth_access_token}">tar.gz</a> | <a href="output/bz2/?oauth_access_token={/clam/@oauth_access_token}">tar.bz2</a>)
+          </xsl:otherwise>
+          </xsl:choose>
+        </p>
+        
     </div>
 </xsl:template>
 
