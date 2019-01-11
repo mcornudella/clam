@@ -32,17 +32,17 @@
 				        <xsl:when test="status/@code = 0">
 				         <li class="active"> Input &amp; Parameters</li>
 				         <li class="disabled"> Processing</li>
-				         <li class="disabled"> Output &amp; Visualisation</li>
+				         <li class="disabled"> Output </li>
 				        </xsl:when>
 				        <xsl:when test="status/@code = 1">
 				         <li class="disabled"> Input &amp; Parameters</li>
 				         <li class="active"> Processing</li>
-				         <li class="disabled"> Output &amp; Visualisation</li>
+				         <li class="disabled"> Output </li>
 				        </xsl:when>
 				        <xsl:when test="status/@code = 2">
 				         <li class="disabled"> Input &amp; Parameters</li>
 				         <li class="disabled"> Processing</li>
-				         <li class="active"> Output &amp; Visualisation</li>
+				         <li class="active"> Output </li>
 				        </xsl:when>
 				    </xsl:choose>
 
