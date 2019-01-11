@@ -331,8 +331,9 @@
 
             <h3>Add already available resources</h3>
 
-            <div id="inputsourceupload" style="padding: 7px;">
-                    <strong>Step 1)</strong><xsl:text> </xsl:text><em>Select the resource you want to add:</em><!--  <xsl:text> </xsl:text> -->
+            <div id="inputsourceupload">
+            		<strong>Step 1)</strong><xsl:text> </xsl:text><em>Select the resource you want to add:</em><!--  <xsl:text> </xsl:text> -->
+                    <!-- <strong>Step 1)</strong><xsl:text> </xsl:text><em>Select the resource you want to add:</em>  <xsl:text> </xsl:text> -->
                     <select id="uploadinputsource">
                     <xsl:for-each select="/clam/inputsources/inputsource">
                         <option><xsl:attribute name="value"><xsl:value-of select="./@id" /></xsl:attribute><xsl:value-of select="." /></option>
@@ -361,10 +362,10 @@
                 	<h3 style="font-size: 120%; color:  #006DCC; cursor: pointer;"> Upload a file from disk</h3>
                 </div>	
                 <div id="clientupload" style="display: none;" >
-                <p>Use this to upload files from your computer to the system.</p>
+                <p style="padding: 7px;">Use this to upload files from your computer to the system.</p>
                     <!--  <strong>Step 1)</strong><xsl:text> </xsl:text><em>First select what type of file you want to add:</em><xsl:text> </xsl:text><select id="uploadinputtemplate" class="inputtemplates"></select><br /> -->
                     <!--  <strong>Step 2)</strong><xsl:text> </xsl:text><em>Set the parameters for the file(s) you are about to upload:</em><xsl:text> </xsl:text><div id="uploadparameters" class="parameters"><em>Select a type first</em></div> -->
-                    <!--  <strong>Step 1)</strong>--><xsl:text> </xsl:text><em>Click the upload button below and then select one or more files (holding control), you can also drag &amp; drop files onto the button from an external file manager</em><xsl:text> </xsl:text>
+                    <!--  <strong>Step 1)</strong>--><xsl:text> </xsl:text><em style="padding: 7px;">Click the upload button below and then select one or more files (holding control), you can also drag &amp; drop files onto the button from an external file manager</em><xsl:text> </xsl:text>
                     <xsl:choose>
                     <xsl:when test="contains(/clam/@interfaceoptions,'simpleupload') or contains(/clam/@interfaceoptions,'secureonly')">
                     	<input id="uploadbutton" class="uploadbutton" type="submit" value="Select and upload a file" />
