@@ -213,7 +213,7 @@ table.files li {
     color: red;
 }
 .parameters th, .parameters td {
-	font-size: 120%;
+	/*font-size: 120%;*/
     width: 49%;
     text-align: left;
 }
