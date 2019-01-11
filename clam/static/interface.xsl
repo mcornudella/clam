@@ -399,8 +399,8 @@
 		                 <!-- <strong>Step 2)</strong><xsl:text> </xsl:text><em>Set the parameters for the file you are adding:</em><xsl:text> </xsl:text><div id="urluploadparameters" class="parameters"><em>Select a type first</em></div> -->
 		                <!-- <strong style="padding: 7px;">Step 1)</strong><xsl:text> </xsl:text><em>Enter the file URL </em><xsl:text> </xsl:text><input id="urluploadfile" value="http://" /><br />
 		                <strong style="padding: 7px;">Step 2)</strong><xsl:text> </xsl:text><input id="urluploadsubmit" class="uploadbutton" type="submit" value="Retrieve and add file" />  -->
-		                <xsl:text> </xsl:text><p style="padding: 7px;">Enter the file URL <xsl:text> </xsl:text> <input id="urluploadfile" value="http://" /> </p> <br />
-		                <xsl:text> </xsl:text><input id="urluploadsubmit" class="uploadbutton" type="submit" value="Retrieve and add file" />
+		                <xsl:text> </xsl:text><p style="padding: 7px;">Enter the file URL <xsl:text> </xsl:text> <input id="urluploadfile" value="http://" /> </p> 
+		                <xsl:text> </xsl:text><input id="urluploadsubmit" class="uploadbutton" type="submit" value="Retrieve and add file" style="padding: 7px;"/>
 		                
 		            </div>
 				</div>
