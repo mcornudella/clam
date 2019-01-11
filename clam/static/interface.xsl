@@ -402,7 +402,7 @@
 
             <div id="urluploadprogress" >
                         <strong>Download in progress... Please wait...</strong><br />
-                        <img class="progress" src="{/clam/@baseurl}/static/progress.gif" />
+                        <img class="progress" src="{/clam/@baseurl}/static/progress.gif" style="cursor: pointer;" />
             </div>
 
  			<xsl:if test="not(contains(/clam/@interfaceoptions,'disableliveinput'))">
