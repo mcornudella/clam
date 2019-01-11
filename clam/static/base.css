@@ -204,7 +204,7 @@ table.files li {
 
 .parameters th .description {
     font-weight: normal;
-    font-style: italic;
+    /*font-style: italic;*/
     margin-left: 20px;
     /*font-size: 90%;*/
 }
